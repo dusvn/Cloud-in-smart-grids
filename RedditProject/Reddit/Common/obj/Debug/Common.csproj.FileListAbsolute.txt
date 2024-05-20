@@ -1,0 +1,6 @@
+C:\Users\Jovan\Desktop\RedditProject\Reddit\Common\bin\Debug\Common.dll
+C:\Users\Jovan\Desktop\RedditProject\Reddit\Common\bin\Debug\Common.pdb
+C:\Users\Jovan\Desktop\RedditProject\Reddit\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Jovan\Desktop\RedditProject\Reddit\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Jovan\Desktop\RedditProject\Reddit\Common\obj\Debug\Common.dll
+C:\Users\Jovan\Desktop\RedditProject\Reddit\Common\obj\Debug\Common.pdb

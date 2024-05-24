@@ -1,39 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\",
+  "WorkspaceRootPath": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\0010\\desktop\\cloudproject\\cloud-in-smart-grids\\redditproject\\reddit\\redditservice\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\jovan\\desktop\\cld\\cloud-in-smart-grids\\redditproject\\reddit\\redditservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RedditService||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\ServiceConfiguration.Cloud.cscfg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|solutionrelative:Reddit\\ServiceConfiguration.Cloud.cscfg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\RedditServiceContent\\diagnostics.wadcfgx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|solutionrelative:Reddit\\RedditServiceContent\\diagnostics.wadcfgx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\0010\\desktop\\cloudproject\\cloud-in-smart-grids\\redditproject\\reddit\\redditservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\0010\\desktop\\cloudproject\\cloud-in-smart-grids\\redditproject\\reddit\\redditservice\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\redditservice\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\RedditService.csproj||{C1C21263-6FDE-4EC2-9D4C-2B238680F849}",
+      "RelativeMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|solutionrelative:RedditService\\RedditService.csproj||{C1C21263-6FDE-4EC2-9D4C-2B238680F849}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Reddit||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\Reddit.ccproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|46360e4f-9758-402f-afa7-037297e020a6",
-      "RelativeMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|solutionrelative:Reddit\\Reddit.ccproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|46360e4f-9758-402f-afa7-037297e020a6"
+      "AbsoluteMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\ServiceConfiguration.Cloud.cscfg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|solutionrelative:Reddit\\ServiceConfiguration.Cloud.cscfg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\0010\\desktop\\cloudproject\\cloud-in-smart-grids\\redditproject\\reddit\\redditservice\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\RedditServiceContent\\diagnostics.wadcfgx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|solutionrelative:Reddit\\RedditServiceContent\\diagnostics.wadcfgx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\redditservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\Reddit.ccproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|46360e4f-9758-402f-afa7-037297e020a6",
+      "RelativeMoniker": "D:0:0:{B54D7215-22A1-49BE-BB1E-36035FB59A72}|Reddit\\Reddit.ccproj|solutionrelative:Reddit\\Reddit.ccproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|46360e4f-9758-402f-afa7-037297e020a6"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,16 +44,22 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0849e941-4665-42e5-8dd0-e4c8da15dbd0}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RedditService [Role]",
+              "DocumentMoniker": "WindowsAzure: Reddit.RedditService",
+              "ToolTip": "WindowsAzure: Reddit.RedditService [Role]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-24T21:05:42.678Z",
+              "EditorCaption": " [Role]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Reddit",
-              "DocumentMoniker": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\Reddit.ccproj",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\Reddit.ccproj",
               "RelativeDocumentMoniker": "Reddit\\Reddit.ccproj",
-              "ToolTip": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\Reddit.ccproj",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\Reddit.ccproj",
               "RelativeToolTip": "Reddit\\Reddit.ccproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-24T19:46:49.943Z",
@@ -64,35 +68,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LogInController.cs",
-              "DocumentMoniker": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\LogInController.cs",
-              "RelativeDocumentMoniker": "RedditService\\Controllers\\LogInController.cs",
-              "ToolTip": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\LogInController.cs",
-              "RelativeToolTip": "RedditService\\Controllers\\LogInController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABUAAAAjAAAA",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "RedditService\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\UserController.cs",
+              "RelativeToolTip": "RedditService\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T19:41:43.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RedditService",
-              "DocumentMoniker": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\RedditService.csproj",
-              "RelativeDocumentMoniker": "RedditService\\RedditService.csproj",
-              "ToolTip": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\RedditService.csproj",
-              "RelativeToolTip": "RedditService\\RedditService.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-24T19:40:50.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ServiceConfiguration.Cloud.cscfg",
-              "DocumentMoniker": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\ServiceConfiguration.Cloud.cscfg",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\ServiceConfiguration.Cloud.cscfg",
               "RelativeDocumentMoniker": "Reddit\\ServiceConfiguration.Cloud.cscfg",
-              "ToolTip": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\ServiceConfiguration.Cloud.cscfg",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\ServiceConfiguration.Cloud.cscfg",
               "RelativeToolTip": "Reddit\\ServiceConfiguration.Cloud.cscfg",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -101,11 +93,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "diagnostics.wadcfgx",
-              "DocumentMoniker": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\RedditServiceContent\\diagnostics.wadcfgx",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\RedditServiceContent\\diagnostics.wadcfgx",
               "RelativeDocumentMoniker": "Reddit\\RedditServiceContent\\diagnostics.wadcfgx",
-              "ToolTip": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\RedditServiceContent\\diagnostics.wadcfgx",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit\\RedditServiceContent\\diagnostics.wadcfgx",
               "RelativeToolTip": "Reddit\\RedditServiceContent\\diagnostics.wadcfgx",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -114,11 +106,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Web.config",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Web.config",
               "RelativeDocumentMoniker": "RedditService\\Web.config",
-              "ToolTip": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Web.config",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Web.config",
               "RelativeToolTip": "RedditService\\Web.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -127,13 +119,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "WebRole.cs",
-              "DocumentMoniker": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\WebRole.cs",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\WebRole.cs",
               "RelativeDocumentMoniker": "RedditService\\WebRole.cs",
-              "ToolTip": "C:\\Users\\0010\\Desktop\\cloudProject\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\WebRole.cs",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cld\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\WebRole.cs",
               "RelativeToolTip": "RedditService\\WebRole.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T19:39:43.806Z",
               "EditorCaption": ""

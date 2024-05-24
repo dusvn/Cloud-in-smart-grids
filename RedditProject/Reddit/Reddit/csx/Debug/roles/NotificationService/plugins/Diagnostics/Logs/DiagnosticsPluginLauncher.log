@@ -1,10 +1,13 @@
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Emulator config file set to C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] DiagnosticsStoreRootPath set to: C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Loading config file: C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Config file to read: C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Checking VM Type
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Emulator config file set to C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Extension set to Emulator Mode
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Reading XML configuration file
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Bypassing private config decryption
-DiagnosticsPluginLauncher.exe Information: 0 : [17.5.2024. 21:27:26] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Emulator config file set to C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] DiagnosticsStoreRootPath set to: C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Loading config file: C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Config file to read: C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Emulator config file set to C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:29 PM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/24/2024 8:38:30 PM] Killing any MonAgentHost that might remain.

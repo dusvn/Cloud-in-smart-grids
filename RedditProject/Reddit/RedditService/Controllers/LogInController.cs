@@ -15,68 +15,105 @@ using System.Web.Http;
 using static System.Net.Mime.MediaTypeNames;
 using Reddit_Data;
 using Microsoft.Azure;
+using Common.Models;
+using System.Web.Http.Results;
+using Common.DTO;
 
 namespace RedditService.Controllers
 {
-
-    [Route("api/login")]
     public class LogInController : ApiController
     {
 
         UserDataRepository repo = new UserDataRepository();
+        BlobHelper blob = new BlobHelper();
 
+        public UserDataRepository Repo { get => repo; set => repo = value; }
 
         [HttpPost]
         [ActionName("PostLogin")]
-        public async Task<HttpResponseMessage> PostLogin() {
+        [Route("login")]
+        public async Task<IHttpActionResult> PostLogin() 
+        {
+            return Ok();
+            //if (string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password)) return BadRequest("Password and email can't be empty!");
+            //try
+            //{
+            //    User userInfo = await Repo.Login(user.Email, user.Password);
+            //    // take image of user from blob 
+            //    byte[] userImage = await blob.DownloadImage(userInfo, "users"); // don't touch small letter is required!
 
-            if (!Request.Content.IsMimeMultipartContent())
+            //    if (userInfo == null) return BadRequest("Invalid credentials!");
+            //    else
+            //    {
+            //        var response = new
+            //        {
+            //            user = new FullUserDTO(userInfo.FirstName,
+            //            userInfo.LastName,
+            //            userInfo.Password,
+            //            userInfo.Address,
+            //            userInfo.City,
+            //            userInfo.Country,
+            //            userInfo.PhoneNum,
+            //            userInfo.Email,
+            //            userImage, // image from blob 
+            //            userInfo.UserId),
+            //            message = "Login successful"
+            //        };
+            //        return Ok(response);
+            //    }
+            //}
+            //catch (Exception)
+            //{
+            //    return StatusCode(HttpStatusCode.InternalServerError);
+            //}
+        }
+
+
+        [HttpPost]
+        [Route("login/register")]
+        public async Task<IHttpActionResult> Register([FromBody]UserRegister userData)
+        {
+
+            if (string.IsNullOrEmpty(userData.Email)) return BadRequest("Invalid email format");
+            if (string.IsNullOrEmpty(userData.Password)) return BadRequest("Password cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.FirstName)) return BadRequest("First name cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.LastName)) return BadRequest("Last name cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.Address)) return BadRequest("Address cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.PhoneNum)) return BadRequest("Phone num cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.Country)) return BadRequest("Country cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.City)) return BadRequest("City cannot be null or empty");
+            if (userData.Image.Length == 0 || userData.Image == null) return BadRequest("Image is required!");
+            try
             {
-                throw new HttpResponseException(HttpStatusCode.UnsupportedMediaType);
+                if (!await Repo.CheckIfAlreadyExists(userData.Email))
+                {
+                    User u = new User(userData.FirstName,
+                        userData.LastName,
+                        userData.Password,
+                        userData.Address,
+                        userData.City,
+                        userData.Country,
+                        userData.PhoneNum,
+                        userData.Email);
+
+                    //photo upload
+                    string imageUrl = await blob.UploadImage(userData.Image, userData.UserId);
+                    u.Image = imageUrl;
+                    Guid guid = Guid.NewGuid();
+                    u.RowKey = guid.ToString();
+                    u.UserId = guid;
+
+                    //onda se dodaje user 
+                    Repo.AddUser(u);
+
+                    return Ok("Successfuly register new user!");
+                
+                } else return BadRequest("User already exists!");
             }
-
-            var v = await Request.Content.ReadAsMultipartAsync();
-
-            var username = await v.Contents[0].ReadAsStringAsync();
-            var password = await v.Contents[1].ReadAsStringAsync();
-            var image = await v.Contents[2].ReadAsStreamAsync();
-
-
-            string uniqueBlobName = string.Format("image_{0}", username);
-            var storageAccount =
-            CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
-            CloudBlobClient blobStorage = storageAccount.CreateCloudBlobClient();
-            CloudBlobContainer container = blobStorage.GetContainerReference("vezba");
-            CloudBlockBlob blob = container.GetBlockBlobReference(uniqueBlobName);
-            // postavljanje odabrane datoteke (slike) u blob servis koristeci blob klijent
-            blob.UploadFromStream(image);
-
-            User user = new User(username) {
-
-                Username = username,
-                Password = password,
-                Picture = blob.Uri.ToString()
-            
-            };
-
-            repo.AddStudent(user);
-
-            StringBuilder sb = new StringBuilder();
-            sb.Append("<html><table><tr><th>Index</th><th>Name</th><th>LastName</th><th>Photo</th><th></th></tr>");
-            sb.Append($"<tr><td>{user.Username}</td><td>{user.Password}</td>");
-            sb.Append($"<td><img src=\"{user.Picture}\" /></td></tr></table></html>");
-
-
-            HttpResponseMessage h1 = new HttpResponseMessage(HttpStatusCode.OK) {
-            
-                Content= new StringContent(sb.ToString(),Encoding.UTF8,"text/html")
-            
-            };
-
-            return h1;
-
-
-
+            catch (Exception)
+            {
+                return StatusCode(HttpStatusCode.InternalServerError);
+            }
         }
 
 
@@ -84,4 +121,3 @@ namespace RedditService.Controllers
 
 
 }
-

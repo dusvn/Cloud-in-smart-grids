@@ -16,7 +16,7 @@
   </Runtime>
   <Properties>
     <Property name="TargetFrameworkVersion" value="v4.5.1" />
-    <Property name="OutputDir" value="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\obj\Debug\HealthMonitoringService\" />
+    <Property name="OutputDir" value="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\obj\Debug\HealthMonitoringService\" />
     <Property name="RoleTargetFramework" value="v4.5.1" />
     <Property name="SitePhysicalPath" value="" />
     <Property name="EntryPoint" value="HealthMonitoringService.dll" />

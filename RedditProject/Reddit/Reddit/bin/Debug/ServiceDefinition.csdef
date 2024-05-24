@@ -27,10 +27,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\rcf\Debug\RedditServiceContent\" />
+        <SourceDirectory path="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\RedditServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\ecf\RedditServiceContent\" />
+        <SourceDirectory path="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\ecf\RedditServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -47,10 +47,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\rcf\Debug\NotificationServiceContent\" />
+        <SourceDirectory path="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\NotificationServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\ecf\NotificationServiceContent\" />
+        <SourceDirectory path="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\ecf\NotificationServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -63,10 +63,10 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\rcf\Debug\HealthMonitoringServiceContent\" />
+        <SourceDirectory path="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\HealthMonitoringServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\ecf\HealthMonitoringServiceContent\" />
+        <SourceDirectory path="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\ecf\HealthMonitoringServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -90,10 +90,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\rcf\Debug\HealthStatusServiceContent\" />
+        <SourceDirectory path="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\HealthStatusServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\ecf\HealthStatusServiceContent\" />
+        <SourceDirectory path="C:\Users\0010\Desktop\cloudProject\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\ecf\HealthStatusServiceContent\" />
       </Content>
     </Contents>
     <Imports>

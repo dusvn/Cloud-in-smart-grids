@@ -3,7 +3,7 @@ import '../Style/LoginPage.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {useNavigate} from "react-router-dom";
-
+import { LoginApiCall } from '../Services/LoginService';
 export default function Login() {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState(true);
@@ -11,30 +11,9 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState(true);
 
+  const apiEndpoint = "http://localhost:14543/user/login";
   const navigate = useNavigate();
 
-//   const handleLoginClick = (e) => {
-//     e.preventDefault();
-  
-//     if (emailError) {
-//       alert("Please type email in correct form!");
-//     } else if (passwordError) {
-//       alert("Password needs to have 8 characters, one capital letter, one number, and one special character");
-//     } else {
-//       LoginApiCall(email, password, loginApiEndpoint)
-//         .then((responseOfLogin) => {
-//           console.log("Response from login user", responseOfLogin);
-//           console.log(typeof responseOfLogin);
-//           if("Login successful" == responseOfLogin.message){
-//             localStorage.setItem('token', responseOfLogin.token);
-//             navigate("/Dashboard", { state: { user: responseOfLogin.user } });
-//           }
-//         })
-//         .catch((error) => {
-//           console.error("Error in login:", error);
-//         });
-//     }
-//   };
 
   const handlePasswordChange = (e) => {
     const value = e.target.value;
@@ -65,6 +44,14 @@ export default function Login() {
     }
   };
 
+  const handleLogin = async (e) =>{
+    e.preventDefault();
+   const data = await LoginApiCall(email,password,apiEndpoint);
+   if(data.message == "Login successful"){
+      navigate('/Dashboard');
+   }
+   console.log("Data from login",data);
+  }
 
   return (
     <div className='font-serif'>
@@ -76,7 +63,7 @@ export default function Login() {
         <div className="login-form">
           <h3 className='text-4xl dark:text-white font-serif'>LOGIN</h3>
           <br></br>
-          <form  method='post'>
+          <form  method='post' onSubmit={handleLogin}>
             <input className="input-field" type="text" placeholder="Email" value={email} onChange={handleEmailChange} />
             <input className="input-field" type="password" placeholder="Password" value={password} onChange={handlePasswordChange} title='Passoword need 8 character one capital letter,number and special character' />
             <button className="login-button" type='submit'>Login</button>

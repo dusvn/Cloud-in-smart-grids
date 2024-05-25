@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../Style/Register.css';
 import { Link } from 'react-router-dom';
+import RegisterApiCall, { DropErrorForField } from '../Services/RegisterService.js';
+import { useNavigate } from 'react-router-dom';
 export default function Register() {
+    const apiEndpoint = "http://localhost:14543/user/register";
+    const navigate = useNavigate();
 
     const [firstName, setFirstName] = useState('');
     const [firstNameError, setFirstNameError] = useState(true);
@@ -59,15 +63,16 @@ export default function Register() {
             setPasswordError(false);
         }
     };
-    //not empty 
+    //+381 621950549
     const handlePhoneNumChange = (e) => {
         const value = e.target.value;
+        const isValidPhoneNumber = /^\+\d{12}$/.test(value);
         setPhoneNum(value);
         if (value.trim() === '') {
             setPhoneNumError(true);
-        } else {
-            setPhoneNumError(false);
-        }
+        } else if (!isValidPhoneNumber) {
+            setPhoneNumError(true);
+        } else setPhoneNumError(false);
     };
     // not empty
     const handleFirstNameChange = (e) => {
@@ -121,15 +126,29 @@ export default function Register() {
     };
     const handleImageUrlChange = (e) => {
         const selectedFile = e.target.files[0];
-        
-        if (!selectedFile || !selectedFile.name) {
+    
+        // Check if a file was actually selected
+        if (!selectedFile ||!selectedFile.name) {
             setImageUrlError(true);
         } else {
-            setImageUrl(selectedFile);
+            setImageUrl(selectedFile)
             setImageUrlError(false);
         }
     };
- return (
+    
+    
+    const handleRegisterClick = async (e) => {
+        e.preventDefault();
+    
+        const data= await RegisterApiCall(firstNameError,lastNameError,cityError,addressError,countryError,emailError,passwordError,phoneNumError,imageUrlError,firstName,lastName,city,address,country,email,password,imageUrl,phoneNum,apiEndpoint);
+        console.log(data);
+        if(data=="Successfuly register new user!"){
+            alert(data);
+            navigate('/');
+        }else alert("User with this email already exists!");
+    };
+
+    return (
     <div>
         <div className='black-header'>
             <h1>Reddit</h1>
@@ -139,7 +158,7 @@ export default function Register() {
                 <h3 className='text-4xl dark:text-white font-serif'>Registration</h3>
                 <br></br>
                 <div>
-                    <form encType="multipart/form-data" method='post'>
+                    <form encType="multipart/form-data" method='post' onSubmit={handleRegisterClick}>
                         <div className="input-field">
                             <input
                                 style={{ borderColor: firstNameError ? '#EF4444' : '#E5E7EB' }}

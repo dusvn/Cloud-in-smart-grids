@@ -1,14 +1,21 @@
-import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Style/Dashboard.css';
 import { FaSignOutAlt } from 'react-icons/fa';
 import { MdPerson } from 'react-icons/md';
-import { FaBook } from 'react-icons/fa'; // Import the icon component
+import { GetAllMyPosts, GetOtherPosts } from '../Services/Topics';
+
 export default function Dashboard() {
     const navigate = useNavigate();
+    const apiForMyPosts = "http://localhost:14543/topic/getMyPosts";
+    const apiForOtherPosts = "http://localhost:14543/topic/getOtherPosts";
     console.log(localStorage.getItem('userId'));
+
+    const [myPosts, setMyPosts] = useState([]);
+    const [otherPosts, setOtherPosts] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(5);
+
     const handleSignOut = () => {
         localStorage.removeItem('userId');
         navigate('/');
@@ -21,6 +28,45 @@ export default function Dashboard() {
     const handleAddNewTopic = () => {
         navigate('/NewTopic');
     }
+
+    const handleViewFullTopic = (postId) => {
+        navigate(`/topic/${postId}`);
+    };
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const userId = localStorage.getItem('userId');
+                // Call GetAllMyPosts
+                const myPostsData = await GetAllMyPosts(apiForMyPosts, userId);
+                setMyPosts(myPostsData);
+
+                // Call GetOtherPosts
+                const otherPostsData = await GetOtherPosts(apiForOtherPosts, userId);
+                setOtherPosts(otherPostsData);
+
+                console.log('My Posts:', myPostsData);
+                console.log('Other Posts:', otherPostsData);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    const truncateText = (text, maxLength) => {
+        if (text.length <= maxLength) {
+            return text;
+        }
+        return text.substring(0, maxLength) + '...';
+    };
+
+    const paginate = (posts) => {
+        const indexOfLastPost = currentPage * postsPerPage;
+        const indexOfFirstPost = indexOfLastPost - postsPerPage;
+        return posts.slice(indexOfFirstPost, indexOfLastPost);
+    };
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
@@ -50,28 +96,44 @@ export default function Dashboard() {
                         </button>
                     </div>
                 </div>
-                <div style={{ width: '25%', height: '100%', backgroundColor: '	rgb(220,220,220)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}>
-
-
-                </div>
+                <div style={{ width: '25%', height: '100%', backgroundColor: 'rgb(220,220,220)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}></div>
                 <div style={{ width: '50%', height: '100%', backgroundColor: 'rgb(128,128,128)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', columnGap: '10px' }}>
-
-                <h1 style={{marginLeft: '20px', textDecoration: 'underline', width:'200px'}}>Your topics</h1>
-                <span><button className='button-logout' style={{marginLeft: '900px'}} onClick={handleAddNewTopic}>New topic</button></span>
-                <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} />
-
-                <div>There is my topics</div>
-
-                <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} />
-                <h1 style={{marginLeft: '20px', textDecoration: 'underline', width:'200px'}}>Topics</h1>
-                <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} />
-                <div>
-                    There is other topics
+                    <h1 style={{ marginLeft: '20px', textDecoration: 'underline', width: '200px' }}>Your topics</h1>
+                    <span><button className='button-logout' style={{ marginLeft: '900px' }} onClick={handleAddNewTopic}>New topic</button></span>
+                    {/* <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} /> */}
+                    <div style={{marginLeft:'20px'}}>
+                        {myPosts.length > 0 ? (
+                            paginate(myPosts).map((post, index) => (
+                                <div key={index}>
+                                    {/* <h2>{post.Title}</h2> */}
+                                    <p><b>{post.Title}</b></p>
+                                    <p>{truncateText(post.Text, 100)}</p>
+                                    <button onClick={() => handleViewFullTopic(post.TopicId)}>View Full Topic</button>
+                                    <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} />
+                                </div>
+                            ))
+                        ) : (
+                            <p>No posts to display</p>
+                        )}
+                    </div>
+                    <h1 style={{ marginLeft: '20px', textDecoration: 'underline', width: '200px' }}>Topics</h1>
+                    <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} />
+                    <div style={{marginLeft:'20px'}}>
+                        {otherPosts.length > 0 ? (
+                            paginate(otherPosts).map((post, index) => (
+                                <div key={index}>
+                                     <p><b>{post.Title}</b></p>
+                                    <p>{truncateText(post.Text, 100)}</p>
+                                    <button onClick={() => handleViewFullTopic(post.TopicId)}>View Full Topic</button>
+                                    <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} />
+                                </div>
+                            ))
+                        ) : (
+                            <p>No posts to display</p>
+                        )}
+                    </div>
                 </div>
-                </div>
-                <div style={{ width: '25%', height: '100%', backgroundColor: '	rgb(220,220,220)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}>
-                </div>
-
+                <div style={{ width: '25%', height: '100%', backgroundColor: 'rgb(220,220,220)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}></div>
             </div>
         </div>
     );

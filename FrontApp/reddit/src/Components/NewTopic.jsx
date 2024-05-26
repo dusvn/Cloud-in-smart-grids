@@ -25,6 +25,7 @@ export default function NewTopic() {
         else{
         const data = await AddNewTopic(title,text,photo,changeUserFieldsApi,localStorage.getItem('userId'));
         console.log("This is data:",data);
+        if(data=="Successfuly added new topic!") navigate('/Dashboard');
         }
     };
 

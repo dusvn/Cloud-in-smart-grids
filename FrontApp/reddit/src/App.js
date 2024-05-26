@@ -10,6 +10,7 @@ import Register from "./Components/Register";
 import Dashboard from "./Components/Dashboard";
 import EditProfile from "./Components/EditProfile";
 import NewTopic from "./Components/NewTopic";
+import FullTopic from "./Components/FullTopic";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route  path='/Dashboard' element={<Dashboard/>}></Route>
             <Route  path='/EditProfile' element={<EditProfile/>}></Route>
             <Route exact path='/NewTopic' element={<NewTopic/>}></Route>
+            <Route path="/FullTopic" element={<FullTopic/>}></Route>
             </Routes>
         </Router>
     </>

@@ -29,3 +29,18 @@ export async function GetOtherPosts(apiEndpoint,userId) {
         throw error;
     }
 }
+
+export async function GetTopic(apiEndpoint,postId) {
+    try {
+        const response = await axios.get(apiEndpoint, {
+            params: {
+                postId: postId
+            }
+        });
+
+        return response.data;
+    } catch (error) {
+        console.error('Error while fetching user info:', error);
+        throw error;
+    }
+}

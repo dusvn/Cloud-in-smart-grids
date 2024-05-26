@@ -30,7 +30,7 @@ export default function Dashboard() {
     }
 
     const handleViewFullTopic = (postId) => {
-        navigate(`/topic/${postId}`);
+        navigate('/FullTopic' ,{ state: { postId: postId } });
     };
 
     useEffect(() => {

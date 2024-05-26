@@ -44,14 +44,25 @@ export default function Login() {
     }
   };
 
-  const handleLogin = async (e) =>{
+  const handleLogin = (e) => {
     e.preventDefault();
-   const data = await LoginApiCall(email,password,apiEndpoint);
-   if(data.message == "Login successful"){
-      navigate('/Dashboard');
-   }
-   console.log("Data from login",data);
-  }
+    const apiEndpoint = 'http://localhost:14543/user/login';
+
+    LoginApiCall(email, password, apiEndpoint)
+        .then(data => {
+            if (data && data.message === "Login successful") {
+                console.log(data);
+                const userId = data.user.UserId;
+                localStorage.setItem('userId', userId);
+                navigate('/Dashboard');
+            } else {
+                alert("Invalid credentials");
+            }
+        })
+        .catch(error => {
+            alert(`Error during login: ${error.response?.data?.message || error.message}`);
+        });
+};
 
   return (
     <div className='font-serif'>

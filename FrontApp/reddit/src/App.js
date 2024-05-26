@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Register from "./Components/Register";
 import Dashboard from "./Components/Dashboard";
+import EditProfile from "./Components/EditProfile";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
             <Routes>
             <Route exact path="/" element={<LoginForm />} />
             <Route path='/Register' element={<Register/>}></Route>
-            <Route path='Dashboard' element={<Dashboard/>}></Route>
+            <Route  path='/Dashboard' element={<Dashboard/>}></Route>
+            <Route  path='/EditProfile' element={<EditProfile/>}></Route>
             </Routes>
         </Router>
     </>

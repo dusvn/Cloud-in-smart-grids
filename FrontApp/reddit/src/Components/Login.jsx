@@ -46,10 +46,10 @@ export default function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    const apiEndpoint = 'http://localhost:14543/user/login';
 
     LoginApiCall(email, password, apiEndpoint)
         .then(data => {
+          console.log("This is data:",data);
             if (data && data.message === "Login successful") {
                 console.log(data);
                 const userId = data.user.UserId;

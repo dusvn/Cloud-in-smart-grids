@@ -98,15 +98,12 @@ export default async function RegisterApiCall(
         userData.append('PhoneNum', phoneNum);
         userData.append('Image', imageUrl);
         
-        console.log(typeof imageUrl);
-        console.log(imageUrl);
         try {
             const response = await axios.post(apiEndpoint, userData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
             });
-            console.log('Success register of user:', response.data);
             return response.data;
         } catch (error) {
             console.error('API call error:', error);

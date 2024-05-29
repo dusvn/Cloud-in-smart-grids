@@ -18,8 +18,8 @@ namespace RedditService
     {
         protected void Application_Start()
         {
+
             AreaRegistration.RegisterAllAreas();
-            //InitBlobs();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
@@ -27,28 +27,6 @@ namespace RedditService
 
 
         }
-
-        //public void InitBlobs()
-        //{
-        //    try
-        //    {
-        //        // read account configuration settings
-        //        var storageAccount =
-        //        CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
-
-        //        // create blob container for images
-        //        CloudBlobClient blobStorage = storageAccount.CreateCloudBlobClient();
-        //        CloudBlobContainer container = blobStorage.GetContainerReference("vezba");
-        //        container.CreateIfNotExists();
-        //        // configure container for public access
-        //        var permissions = container.GetPermissions();
-        //        permissions.PublicAccess = BlobContainerPublicAccessType.Container;
-        //        container.SetPermissions(permissions);
-        //    }
-        //    catch (WebException)
-        //    {
-        //    }
-        //}
 
 
 

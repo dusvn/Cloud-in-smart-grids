@@ -18,6 +18,7 @@ using Microsoft.Azure;
 using Common.Models;
 using System.Web.Http.Results;
 using Common.DTO;
+using System.Web.Helpers;
 
 namespace RedditService.Controllers
 {
@@ -30,85 +31,85 @@ namespace RedditService.Controllers
 
         public UserDataRepository Repo { get => repo; set => repo = value; }
 
-        
+
         [HttpPost]
         [Route("user/login")]
-        public async Task<IHttpActionResult> LogIn() 
+        public async Task<IHttpActionResult> LogIn()
         {
-            return Ok();
-            //if (string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password)) return BadRequest("Password and email can't be empty!");
-            //try
-            //{
-            //    User userInfo = await Repo.Login(user.Email, user.Password);
-            //    // take image of user from blob 
-            //    byte[] userImage = await blob.DownloadImage(userInfo, "users"); // don't touch small letter is required!
+            if (!Request.Content.IsMimeMultipartContent())
+            {
+                throw new HttpResponseException(HttpStatusCode.UnsupportedMediaType);
+            }
 
-            //    if (userInfo == null) return BadRequest("Invalid credentials!");
-            //    else
-            //    {
-            //        var response = new
-            //        {
-            //            user = new FullUserDTO(userInfo.FirstName,
-            //            userInfo.LastName,
-            //            userInfo.Password,
-            //            userInfo.Address,
-            //            userInfo.City,
-            //            userInfo.Country,
-            //            userInfo.PhoneNum,
-            //            userInfo.Email,
-            //            userImage, // image from blob 
-            //            userInfo.UserId),
-            //            message = "Login successful"
-            //        };
-            //        return Ok(response);
-            //    }
-            //}
-            //catch (Exception)
-            //{
-            //    return StatusCode(HttpStatusCode.InternalServerError);
-            //}
+            var provider = await Request.Content.ReadAsMultipartAsync();
+            var email = await provider.Contents[0].ReadAsStringAsync();
+            var password = await provider.Contents[1].ReadAsStringAsync();
+
+            var user = await repo.Login(email, password);
+
+            if (user == null)
+            {
+                return BadRequest("Invalid credentials");
+            }
+
+            var response = new
+            {
+                message = "Login successful",
+                user = user
+            };
+
+            return Ok(response);
         }
+
 
         [HttpPost]
         [Route("user/register")]
-        public async Task<IHttpActionResult> Register([FromBody]UserRegister userData)
+        public async Task<IHttpActionResult> Register()
         {
+            if (!Request.Content.IsMimeMultipartContent())
+            {
+                throw new HttpResponseException(HttpStatusCode.UnsupportedMediaType);
+            }
 
-            if (string.IsNullOrEmpty(userData.Email)) return BadRequest("Invalid email format");
-            if (string.IsNullOrEmpty(userData.Password)) return BadRequest("Password cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.FirstName)) return BadRequest("First name cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.LastName)) return BadRequest("Last name cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.Address)) return BadRequest("Address cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.PhoneNum)) return BadRequest("Phone num cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.Country)) return BadRequest("Country cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.City)) return BadRequest("City cannot be null or empty");
-            if (userData.Image.Length == 0 || userData.Image == null) return BadRequest("Image is required!");
+            var v = await Request.Content.ReadAsMultipartAsync();
+
+            var FirstName = await v.Contents[0].ReadAsStringAsync();
+            var LastName = await v.Contents[1].ReadAsStringAsync();
+            var City = await v.Contents[2].ReadAsStringAsync();
+            var Address = await v.Contents[3].ReadAsStringAsync();
+            var Country = await v.Contents[4].ReadAsStringAsync();
+            var Email = await v.Contents[5].ReadAsStringAsync();
+            var Password = await v.Contents[6].ReadAsStringAsync();
+            var PhoneNum = await v.Contents[7].ReadAsStringAsync();
+            var Image = await v.Contents[8].ReadAsStreamAsync();
+
+            byte[] imageBytes = await ConvertStreamToByteArrayAsync(Image);
+
             try
             {
-                if (!await Repo.CheckIfAlreadyExists(userData.Email))
+                if (!await Repo.CheckIfAlreadyExists(Email))
                 {
-                    User u = new User(userData.FirstName,
-                        userData.LastName,
-                        userData.Password,
-                        userData.Address,
-                        userData.City,
-                        userData.Country,
-                        userData.PhoneNum,
-                        userData.Email);
-
-                    //photo upload
-                    string imageUrl = await blob.UploadImage(userData.Image, userData.UserId);
-                    u.Image = imageUrl;
+                    User u = new User(FirstName,
+                        LastName,
+                        Password,
+                        Address,
+                        City,
+                        Country,
+                        PhoneNum,
+                        Email);
                     Guid guid = Guid.NewGuid();
                     u.RowKey = guid.ToString();
                     u.UserId = guid;
-
-                    //onda se dodaje user 
+                    string imageUrl = await blob.UploadImage(imageBytes, u.UserId);
+                    u.Image = imageUrl;
                     Repo.AddUser(u);
 
-                    return Ok("Successfuly register new user!");
-                
-                } else return BadRequest("User already exists!");
+                    return Ok("Successfully registered new user!");
+                }
+                else
+                {
+                    return BadRequest("User already exists!");
+                }
             }
             catch (Exception)
             {
@@ -117,7 +118,17 @@ namespace RedditService.Controllers
         }
 
 
+        public async Task<byte[]> ConvertStreamToByteArrayAsync(Stream stream)
+        {
+            using (MemoryStream memoryStream = new MemoryStream())
+            {
+                await stream.CopyToAsync(memoryStream);
+                return memoryStream.ToArray();
+            }
+        }
+
     }
+
 
 
 }

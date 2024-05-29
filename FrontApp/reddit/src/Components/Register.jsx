@@ -137,16 +137,44 @@ export default function Register() {
     };
     
     
-    const handleRegisterClick = async (e) => {
+    const handleRegisterClick = (e) => {
         e.preventDefault();
     
-        const data= await RegisterApiCall(firstNameError,lastNameError,cityError,addressError,countryError,emailError,passwordError,phoneNumError,imageUrlError,firstName,lastName,city,address,country,email,password,imageUrl,phoneNum,apiEndpoint);
-        console.log(data);
-        if(data=="Successfuly register new user!"){
-            alert(data);
-            navigate('/');
-        }else alert("User with this email already exists!");
+        RegisterApiCall(
+            firstNameError,
+            lastNameError,
+            cityError,
+            addressError,
+            countryError,
+            emailError,
+            passwordError,
+            phoneNumError,
+            imageUrlError,
+            firstName,
+            lastName,
+            city,
+            address,
+            country,
+            email,
+            password,
+            imageUrl,
+            phoneNum,
+            apiEndpoint
+        )
+        .then(data => {
+            console.log("This is data:", data);
+            if (data == "Successfully registered new user!") {
+                navigate('/');
+            } else {
+                alert("User with this email already exists!");
+            }
+        })
+        .catch(error => {
+            console.error("An error occurred during registration:", error);
+            alert("An error occurred during registration. Please try again later.");
+        });
     };
+    
 
     return (
     <div>
@@ -254,9 +282,9 @@ export default function Register() {
                         <div>
                             <button type='submit'>Register</button>
                         </div>
-                        <p className="signup-link">Don't have an account? &nbsp;
+                        <p className="signup-link">Already have an account? &nbsp;
             <Link to="/" className="text-gray-800 font-bold">
-              Register
+              Login
             </Link>
           </p>
                     </form>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Reddit" schemaVersion="2015-04.2.6" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="HealthStatusService" vmsize="Standard_D1_v2">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="15008" localPort="15008" />
+    </Endpoints>
+    <Certificates />
+  </WebRole>
+  <WebRole name="RedditService" vmsize="Standard_D1_v2">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="14543" localPort="14543" />
+      <InputEndpoint name="health-monitoring" protocol="tcp" port="10110" localPort="10110" />
+    </Endpoints>
+    <Certificates />
+  </WebRole>
+  <WorkerRole name="HealthMonitoringService" vmsize="Standard_D1_v2">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints />
+    <Certificates />
+  </WorkerRole>
+  <WorkerRole name="NotificationService" vmsize="Standard_D1_v2">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="health-monitoring" protocol="tcp" port="10100" localPort="10100" />
+    </Endpoints>
+    <Certificates />
+  </WorkerRole>
+</ServiceDefinition>

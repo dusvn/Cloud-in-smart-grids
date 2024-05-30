@@ -30,10 +30,10 @@ namespace Reddit_Data
             return blob;
         }
 
-        public async Task<byte[]> DownloadImage(User user, string nameOfContainer)
+        public async Task<byte[]> DownloadImage(string id, string nameOfContainer)
         {
 
-            CloudBlockBlob blob = GetBlockBlobReference(nameOfContainer, $"image_{user.UserId}");
+            CloudBlockBlob blob = GetBlockBlobReference(nameOfContainer, $"image_{id}");
             await blob.FetchAttributesAsync();
             long blobLength = blob.Properties.Length;
             byte[] byteArray = new byte[blobLength];
@@ -42,6 +42,8 @@ namespace Reddit_Data
             return byteArray;
 
         }
+
+
 
         public async Task<string> UploadImage(byte[] image,Guid userId)
         {

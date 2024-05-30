@@ -67,8 +67,55 @@ namespace Reddit_Data
             else return false;
         }
 
+        public async Task<User> GetUserInfo(Guid userId)
+        {
+            TableQuery<User> userQuery = new TableQuery<User>()
+        .Where(TableQuery.GenerateFilterConditionForGuid("UserId", QueryComparisons.Equal, userId));
 
-   
+
+            TableQuerySegment<User> queryResult = await Table.ExecuteQuerySegmentedAsync(userQuery, null);
+            if (queryResult.Results.Count > 0) return queryResult.Results[0];
+            else return null;
+        }
+
+        public async Task<User> UpdateUser(User user)
+        {
+            TableQuery<User> userQuery = new TableQuery<User>()
+                .Where(TableQuery.GenerateFilterConditionForGuid("UserId", QueryComparisons.Equal, user.UserId));
+
+
+            TableQuerySegment<User> queryResult = await Table.ExecuteQuerySegmentedAsync(userQuery, null);
+
+
+            if (queryResult.Results.Count > 0)
+            {
+                User existingUser = queryResult.Results[0];
+
+
+                existingUser.FirstName = user.FirstName;
+                existingUser.LastName = user.LastName;
+                existingUser.Address = user.Address;
+                existingUser.City = user.City;
+                existingUser.Email = user.Email;
+                existingUser.PhoneNum = user.PhoneNum;
+                existingUser.Password = user.Password;
+                existingUser.Image = user.Image;
+
+                TableOperation updateOperation = TableOperation.Replace(existingUser);
+
+
+                await Table.ExecuteAsync(updateOperation);
+
+                return existingUser;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+
 
 
     }

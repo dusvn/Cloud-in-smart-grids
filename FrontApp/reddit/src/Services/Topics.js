@@ -44,3 +44,22 @@ export async function GetTopic(apiEndpoint,postId) {
         throw error;
     }
 }
+
+
+
+
+export async function DeleteTopic(apiEndpoint,postId) {
+    try {
+        const response = await axios.delete(apiEndpoint, {
+            params: {
+                postId: postId
+            }
+        });
+
+        return response.data;
+    } catch (error) {
+        console.error('Error while fetching comments:', error);
+        throw error;
+    }
+}
+

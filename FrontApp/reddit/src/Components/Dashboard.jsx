@@ -3,12 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import '../Style/Dashboard.css';
 import { FaSignOutAlt } from 'react-icons/fa';
 import { MdPerson } from 'react-icons/md';
-import { GetAllMyPosts, GetOtherPosts } from '../Services/Topics';
+import { GetAllMyPosts, GetOtherPosts,DeleteTopic } from '../Services/Topics';
 
 export default function Dashboard() {
     const navigate = useNavigate();
     const apiForMyPosts = "http://localhost:14543/topic/getMyPosts";
     const apiForOtherPosts = "http://localhost:14543/topic/getOtherPosts";
+    const apiDeletePost= "http://localhost:14543/topic/deletePost";
     console.log(localStorage.getItem('userId'));
 
     const [myPosts, setMyPosts] = useState([]);
@@ -32,6 +33,21 @@ export default function Dashboard() {
     const handleViewFullTopic = (postId) => {
         navigate('/FullTopic' ,{ state: { postId: postId } });
     };
+
+    const handleToAddTopic=()=>{
+
+        navigate("/NewTopic");
+
+    }
+
+    const handleDeleteTopic= async (postId)=>{
+
+        const data = await DeleteTopic(apiDeletePost,postId);
+            console.log("This is data:",data);
+            if(data=="Deleted") window.location.reload();
+
+    }
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -94,12 +110,18 @@ export default function Dashboard() {
                                 <span>Profile</span>
                             </div>
                         </button>
+                        <button className='button-logout' style={{ alignItems:'center',alignContent:'center',height: '45px', width: '180px' }} onClick={handleToAddTopic}>
+                            <div style={{ display: 'flex',alignContent:'center', alignItems: 'center' }}>
+                                <span style={{ marginRight: '50px' }} ></span>
+                                <span style={{alignContent:'center'}}>Add Topic</span>
+                            </div>
+                        </button>
                     </div>
                 </div>
                 <div style={{ width: '25%', height: '100%', backgroundColor: 'rgb(220,220,220)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}></div>
                 <div style={{ width: '50%', height: '100%', backgroundColor: 'rgb(128,128,128)', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', columnGap: '10px' }}>
                     <h1 style={{ marginLeft: '20px', textDecoration: 'underline', width: '200px' }}>Your topics</h1>
-                    <span><button className='button-logout' style={{ marginLeft: '900px' }} onClick={handleAddNewTopic}>New topic</button></span>
+                    {/* <span><button className='button-logout' style={{ marginLeft: '900px' }} onClick={handleAddNewTopic}>New topic</button></span> */}
                     {/* <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} /> */}
                     <div style={{marginLeft:'20px'}}>
                         {myPosts.length > 0 ? (
@@ -109,6 +131,7 @@ export default function Dashboard() {
                                     <p><b>{post.Title}</b></p>
                                     <p>{truncateText(post.Text, 100)}</p>
                                     <button onClick={() => handleViewFullTopic(post.TopicId)}>View Full Topic</button>
+                                    <button onClick={() => handleDeleteTopic(post.TopicId)}>Remove Topic</button>
                                     <hr style={{ border: 'none', height: '1px', backgroundColor: '#333', width: '100%', margin: '10px 0' }} />
                                 </div>
                             ))

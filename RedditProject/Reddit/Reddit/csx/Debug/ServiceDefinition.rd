@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Reddit" generation="1" functional="0" release="0" Id="4564e4e1-1d77-4623-9b88-8129486738c7" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Reddit" generation="1" functional="0" release="0" Id="3da6eb56-873e-4207-ac60-f0c36d91bba6" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="RedditGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -162,7 +162,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="HealthMonitoringService" generation="1" functional="0" release="0" software="C:\Users\0010\Desktop\cloud_projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
+          <role name="HealthMonitoringService" generation="1" functional="0" release="0" software="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
             <settings>
               <aCS name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" defaultValue="" />
               <aCS name="__ModelData" defaultValue="&lt;m role=&quot;HealthMonitoringService&quot; xmlns=&quot;urn:azure:m:v1&quot;&gt;&lt;r name=&quot;HealthMonitoringService&quot; /&gt;&lt;r name=&quot;HealthStatusService&quot;&gt;&lt;e name=&quot;Endpoint1&quot; /&gt;&lt;/r&gt;&lt;r name=&quot;NotificationService&quot;&gt;&lt;e name=&quot;health-monitoring&quot; /&gt;&lt;/r&gt;&lt;r name=&quot;RedditService&quot;&gt;&lt;e name=&quot;Endpoint1&quot; /&gt;&lt;e name=&quot;health-monitoring&quot; /&gt;&lt;/r&gt;&lt;/m&gt;" />
@@ -179,7 +179,7 @@
           </sCSPolicy>
         </groupHascomponents>
         <groupHascomponents>
-          <role name="HealthStatusService" generation="1" functional="0" release="0" software="C:\Users\0010\Desktop\cloud_projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="HealthStatusService" generation="1" functional="0" release="0" software="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="15008" />
             </componentports>
@@ -200,7 +200,7 @@
           </sCSPolicy>
         </groupHascomponents>
         <groupHascomponents>
-          <role name="NotificationService" generation="1" functional="0" release="0" software="C:\Users\0010\Desktop\cloud_projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
+          <role name="NotificationService" generation="1" functional="0" release="0" software="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\NotificationService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="health-monitoring" protocol="tcp" portRanges="10100" />
             </componentports>
@@ -221,7 +221,7 @@
           </sCSPolicy>
         </groupHascomponents>
         <groupHascomponents>
-          <role name="RedditService" generation="1" functional="0" release="0" software="C:\Users\0010\Desktop\cloud_projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="RedditService" generation="1" functional="0" release="0" software="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="14543" />
               <inPort name="health-monitoring" protocol="tcp" portRanges="10110" />
@@ -260,24 +260,24 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="2b74b29e-2c7c-4c3a-8e4c-f5c3be5681dc" ref="Microsoft.RedDog.Contract\ServiceContract\RedditContract@ServiceDefinition">
+    <implementation Id="16b4b74a-67d5-4e98-b689-a026ac5a9ebc" ref="Microsoft.RedDog.Contract\ServiceContract\RedditContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="105c2daf-a385-425f-8dce-54d83e32d685" ref="Microsoft.RedDog.Contract\Interface\HealthStatusService:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="f540d5dc-3aa6-4ea9-8b91-e7c80de374e7" ref="Microsoft.RedDog.Contract\Interface\HealthStatusService:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/Reddit/RedditGroup/HealthStatusService:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="4cb0f6db-fd3a-429b-bf84-fa9672c43a81" ref="Microsoft.RedDog.Contract\Interface\NotificationService:health-monitoring@ServiceDefinition">
+        <interfaceReference Id="a5b69716-b75e-4022-9ce6-da343fd18589" ref="Microsoft.RedDog.Contract\Interface\NotificationService:health-monitoring@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/Reddit/RedditGroup/NotificationService:health-monitoring" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="c32911e7-c611-433e-9524-85c73ce8663d" ref="Microsoft.RedDog.Contract\Interface\RedditService:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="9c04dcd6-8960-4da8-99be-da0cf95d44a8" ref="Microsoft.RedDog.Contract\Interface\RedditService:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/Reddit/RedditGroup/RedditService:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="c2017e8a-7380-4d1d-823c-3a75f868c84d" ref="Microsoft.RedDog.Contract\Interface\RedditService:health-monitoring@ServiceDefinition">
+        <interfaceReference Id="dac4c335-3ed4-4aa1-b7eb-37e9d3905eaa" ref="Microsoft.RedDog.Contract\Interface\RedditService:health-monitoring@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/Reddit/RedditGroup/RedditService:health-monitoring" />
           </inPort>

@@ -10,6 +10,7 @@ using Reddit_Data;
 using Common.Models;
 using Common.DTO;
 using System.Collections.Generic;
+using System.Web;
 
 namespace RedditService.Controllers
 {
@@ -167,8 +168,10 @@ namespace RedditService.Controllers
                 user.Password = newPassword;
                 isUpdated = true;
             }
+            
+            
 
-            if (image != null && image.Length > 0)
+            if (image != null && image.Length > 4)
             {
                 byte[] imageBytes = await ConvertStreamToByteArrayAsync(image);
                 string imageUrl = await blob.UploadImage(imageBytes, Guid.Parse(id));

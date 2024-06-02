@@ -43,6 +43,23 @@ namespace Reddit_Data
             return results;
         }
 
+        public IQueryable<Topic> RetrievePostsByTitle(string title)
+        {
+            var results = from g in Table.CreateQuery<Topic>()
+                          where g.PartitionKey == "Topic" && g.TopicName == title
+                          select g;
+            return results;
+        }
+
+        public IQueryable<Topic> RetrieveAllPosts()
+        {
+            var results = from g in Table.CreateQuery<Topic>()
+                          where g.PartitionKey == "Topic" 
+                          select g;
+            return results;
+        }
+
+
         public Topic RetrievePost(string topicId)
         {
             var results = from g in Table.CreateQuery<Topic>()

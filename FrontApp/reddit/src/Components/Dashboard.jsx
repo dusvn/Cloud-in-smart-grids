@@ -26,6 +26,10 @@ export default function Dashboard() {
         navigate('/EditProfile');
     }
 
+    const handleToSearch = () => {
+        navigate('/Search');
+    }
+
     const handleAddNewTopic = () => {
         navigate('/NewTopic');
     }
@@ -114,6 +118,12 @@ export default function Dashboard() {
                             <div style={{ display: 'flex',alignContent:'center', alignItems: 'center' }}>
                                 <span style={{ marginRight: '50px' }} ></span>
                                 <span style={{alignContent:'center'}}>Add Topic</span>
+                            </div>
+                        </button>
+                        <button className='button-logout' style={{ alignItems:'center',alignContent:'center',height: '45px', width: '180px' }} onClick={handleToSearch}>
+                            <div style={{ display: 'flex',alignContent:'center', alignItems: 'center' }}>
+                                <span style={{ marginRight: '50px' }} ></span>
+                                <span style={{alignContent:'center'}}>Search</span>
                             </div>
                         </button>
                     </div>

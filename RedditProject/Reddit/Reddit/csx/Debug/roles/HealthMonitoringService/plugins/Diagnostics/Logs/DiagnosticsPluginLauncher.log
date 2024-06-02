@@ -1,17 +1,19 @@
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:25] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] DiagnosticsStoreRootPath set to: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] Loading config file: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] Config file to read: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] Checking VM Type
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] Extension set to Emulator Mode
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] Reading XML configuration file
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] Bypassing private config decryption
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:26] Stopping the running plugin, if any
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:27] No DiagnosticsPlugin is running.
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:27] Killing any DiagnosticsPlugin that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:27] Killing any MonAgentHost that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:28] Diagnostics plugin stopped successfully
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:24:28] Resetting DiagnosticPlugin
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:25:41] DiagnosticsPlugin launched successfully with new configuration
-DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 15:25:41] DiagnosticPlugin exited with code 0
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:12] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:12] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] DiagnosticsStoreRootPath set to: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Loading config file: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Config file to read: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:13] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:14] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:01:14] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:02:25] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [1.6.2024. 23:02:25] DiagnosticPlugin exited with code 0

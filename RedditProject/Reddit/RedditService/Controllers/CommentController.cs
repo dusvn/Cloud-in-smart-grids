@@ -1,4 +1,5 @@
 ﻿using Common.DTO;
+using Microsoft.WindowsAzure.Storage.Queue;
 using Reddit_Data;
 using System;
 using System.Collections.Generic;
@@ -45,6 +46,12 @@ namespace RedditService.Controllers
 
             coRepo.AddComment(c);
 
+
+
+            CloudQueue queRef = QueueHelper.GetQueueReference("notifications");
+            byte[] contetn = Encoding.ASCII.GetBytes(c.RowKey);
+            CloudQueueMessage message = new CloudQueueMessage(contetn);
+            queRef.AddMessage(message);
 
 
             return Ok("Successfuly added new topic!");

@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\redditservice\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54ADB867-B673-4362-B0F9-0603B7BE0FD4}|NotificationService\\NotificationService.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\notificationservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54ADB867-B673-4362-B0F9-0603B7BE0FD4}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\reddit_data\\sendmailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\sendmailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\reddit_data\\topicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\topicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\redditservice\\controllers\\subscribecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\controllers\\subscribecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\reddit_data\\mails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\mails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\redditservice\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54ADB867-B673-4362-B0F9-0603B7BE0FD4}|NotificationService\\NotificationService.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\notificationservice\\smtpmailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54ADB867-B673-4362-B0F9-0603B7BE0FD4}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\smtpmailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\reddit_data\\subscriberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\subscriberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\reddit_data\\subscribe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\subscribe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\reddit_data\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B7C5CBA-744E-46FA-959D-C838F469DB7C}|Common\\Common.csproj|C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\common\\dto\\subscribedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B7C5CBA-744E-46FA-959D-C838F469DB7C}|Common\\Common.csproj|solutionrelative:common\\dto\\subscribedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|c:\\users\\jovan\\desktop\\cloud_projekat\\cloud-in-smart-grids\\redditproject\\reddit\\reddit_data\\blobhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\blobhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,94 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TopicController.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\TopicController.cs",
-              "RelativeDocumentMoniker": "RedditService\\Controllers\\TopicController.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\TopicController.cs",
-              "RelativeToolTip": "RedditService\\Controllers\\TopicController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAQwE0AAAANAAAA",
+              "Title": "Mails.cs",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\Mails.cs",
+              "RelativeDocumentMoniker": "Reddit_Data\\Mails.cs",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\Mails.cs",
+              "RelativeToolTip": "Reddit_Data\\Mails.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T20:41:10.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SearchController.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\SearchController.cs",
-              "RelativeDocumentMoniker": "RedditService\\Controllers\\SearchController.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\SearchController.cs",
-              "RelativeToolTip": "RedditService\\Controllers\\SearchController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAgwGgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T20:40:42.112Z",
+              "WhenOpened": "2024-06-03T17:18:04.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SendMailsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\SendMailsRepository.cs",
+              "RelativeDocumentMoniker": "Reddit_Data\\SendMailsRepository.cs",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\SendMailsRepository.cs",
+              "RelativeToolTip": "Reddit_Data\\SendMailsRepository.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAIwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T17:16:31.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TopicRepository.cs",
               "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\TopicRepository.cs",
               "RelativeDocumentMoniker": "Reddit_Data\\TopicRepository.cs",
               "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\TopicRepository.cs",
               "RelativeToolTip": "Reddit_Data\\TopicRepository.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAIA1wDsAAAAJAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAhwHYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T13:54:39.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SubscribeDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Common\\DTO\\SubscribeDTO.cs",
-              "RelativeDocumentMoniker": "Common\\DTO\\SubscribeDTO.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Common\\DTO\\SubscribeDTO.cs",
-              "RelativeToolTip": "Common\\DTO\\SubscribeDTO.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAfAAAA",
+              "DocumentIndex": 4,
+              "Title": "SMTPMailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\NotificationService\\SMTPMailSender.cs",
+              "RelativeDocumentMoniker": "NotificationService\\SMTPMailSender.cs",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\NotificationService\\SMTPMailSender.cs",
+              "RelativeToolTip": "NotificationService\\SMTPMailSender.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwCsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T12:41:47.786Z"
+              "WhenOpened": "2024-06-03T16:12:01.464Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Subscribe.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\Subscribe.cs",
-              "RelativeDocumentMoniker": "Reddit_Data\\Subscribe.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\Subscribe.cs",
-              "RelativeToolTip": "Reddit_Data\\Subscribe.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T12:31:01.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "SubscribeRepository.cs",
               "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\SubscribeRepository.cs",
               "RelativeDocumentMoniker": "Reddit_Data\\SubscribeRepository.cs",
               "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\SubscribeRepository.cs",
               "RelativeToolTip": "Reddit_Data\\SubscribeRepository.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwEUAAAAJAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAA1wEUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T12:30:36.431Z"
+              "WhenOpened": "2024-06-01T12:30:36.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SubscribeController.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\SubscribeController.cs",
-              "RelativeDocumentMoniker": "RedditService\\Controllers\\SubscribeController.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\RedditService\\Controllers\\SubscribeController.cs",
-              "RelativeToolTip": "RedditService\\Controllers\\SubscribeController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwCIAAAANAAAA",
+              "DocumentIndex": 7,
+              "Title": "BlobHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\BlobHelper.cs",
+              "RelativeDocumentMoniker": "Reddit_Data\\BlobHelper.cs",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\BlobHelper.cs",
+              "RelativeToolTip": "Reddit_Data\\BlobHelper.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T12:12:26.333Z",
+              "WhenOpened": "2024-06-03T15:23:02.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "Reddit_Data\\CommentRepository.cs",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\Reddit_Data\\CommentRepository.cs",
+              "RelativeToolTip": "Reddit_Data\\CommentRepository.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowEAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T15:22:22.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkerRole.cs",
+              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\NotificationService\\WorkerRole.cs",
+              "RelativeDocumentMoniker": "NotificationService\\WorkerRole.cs",
+              "ToolTip": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\NotificationService\\WorkerRole.cs",
+              "RelativeToolTip": "NotificationService\\WorkerRole.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAFIAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T15:10:12.157Z",
               "EditorCaption": ""
             }
           ]

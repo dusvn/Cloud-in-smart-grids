@@ -53,6 +53,18 @@ namespace Reddit_Data
 
         }
 
+
+        public Comment GetCommentById(string id) 
+        {
+            var results = from g in Table.CreateQuery<Comment>()
+                          where g.PartitionKey == "Comments" && g.RowKey == id
+                          select g;
+
+            return results.FirstOrDefault();
+
+        }
+
+
         public IQueryable<Comment> GetCommentsSeparateComments(string pid,string uid)
         {
 

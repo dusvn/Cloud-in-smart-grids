@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -17,6 +18,7 @@ namespace NotificationService
     {
         private readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
         private readonly ManualResetEvent runCompleteEvent = new ManualResetEvent(false);
+
 
         private NotificationServer notificationServer;
         public override void Run()
@@ -71,11 +73,19 @@ namespace NotificationService
 
         private async Task RunAsync(CancellationToken cancellationToken)
         {
+             CommentRepository commentRepository = new CommentRepository();
+             SubscribeRepository subscribeRepository = new SubscribeRepository();
+             UserDataRepository userRepository = new UserDataRepository();
+             TopicRepository topicRepository = new TopicRepository();
+             BlobHelper blobHelper = new BlobHelper();
+             SMTPMailSender smtp = new SMTPMailSender();
+             SendMailsRepository mailRepository = new SendMailsRepository();
+             CloudQueue storage = QueueHelper.GetQueueReference("notifications");
             // TODO: Replace the following with your own logic.
             while (!cancellationToken.IsCancellationRequested)
             {
 
-                CloudQueue storage = QueueHelper.GetQueueReference("notifications");
+                
 
 
                 CloudQueueMessage req = storage.GetMessage();
@@ -83,18 +93,50 @@ namespace NotificationService
                 if (req == null)
                 {
 
-                    Trace.WriteLine("No messages in queue, fetch time 5s !", "WARNING");
+                    Trace.WriteLine("No messages in queue, fetch time 5s !", "INFO");
 
                 }
 
                 else
                 {
-                    Trace.WriteLine(req.AsString);
+
+                    Comment c= commentRepository.GetCommentById(req.AsString);
+                    Topic topic = topicRepository.RetrievePost(c.PostId);
+                    User u = await userRepository.GetUserInfo(Guid.Parse(c.UserId));
+
+                    List<Subscribe> subs=subscribeRepository.RetrieveSubscriptionsByPostId(c.PostId).ToList();
+
+                    if (subs.Count == 0) 
+                    {
+                        var d = DateTime.Now;
+                        Trace.WriteLine($"There is no subscription for this post ! {d} | {req.AsString} | {subs.Count}", "WARNING");
+                        Mails m = new Mails(d,req.AsString,subs.Count);
+                        mailRepository.AddMail(m);
+
+                    }
+                    else
+                    {
+                        var textByte = await blobHelper.DownloadComment(req.AsString, "comments");
+
+                        var comment=Encoding.UTF8.GetString(textByte);
+
+                        subs.ForEach((s) => 
+                        { 
+                            smtp.SendEmail(s.Email,$"A user {u.Email} comments post {topic.TopicName}",$"A user {u.Email} commented on post {topic.TopicName} :\n\n{comment}"); 
+                            
+                        
+                        });
+
+                        var d = DateTime.Now;
+                        Trace.WriteLine($"{d} | {req.AsString} | {subs.Count}", "INFO");
+                        Mails m = new Mails(d, req.AsString, subs.Count);
+                        mailRepository.AddMail(m);
+
+                    }
+
                     storage.DeleteMessage(req);
                 }
 
-
-                Trace.TraceInformation("Working");
                 await Task.Delay(5000);
             }
         }

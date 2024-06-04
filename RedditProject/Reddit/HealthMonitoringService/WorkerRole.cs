@@ -19,6 +19,7 @@ namespace HealthMonitoringService
         private readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
         private readonly ManualResetEvent runCompleteEvent = new ManualResetEvent(false);
 
+        private HMSServer hmsServer;
         public override void Run()
         {
             Trace.TraceInformation("HealthMonitoringService is running");
@@ -46,6 +47,9 @@ namespace HealthMonitoringService
 
             bool result = base.OnStart();
 
+            hmsServer = new HMSServer();
+            hmsServer.Open();
+
             Trace.TraceInformation("HealthMonitoringService has been started");
 
             return result;
@@ -60,12 +64,16 @@ namespace HealthMonitoringService
 
             base.OnStop();
 
+            hmsServer.Close();
+
             Trace.TraceInformation("HealthMonitoringService has stopped");
         }
 
         private async Task RunAsync(CancellationToken cancellationToken)
         {
             HealthCheckRepository repo = new HealthCheckRepository();
+            EmailErrorSender smtp = new EmailErrorSender();
+            AdminsRepository admins = new AdminsRepository();
             // TODO: Replace the following with your own logic.
             while (!cancellationToken.IsCancellationRequested)
             {
@@ -88,17 +96,29 @@ namespace HealthMonitoringService
 
                     proxy = factory.CreateChannel();
                     string notification = proxy.Message();
-                    Health h = new Health(DateTime.Now,"OK");
+                    Health h = new Health(DateTime.Now, "OK");
                     Trace.WriteLine($"{notification} | {h.HealthDateTime} | {h.State}", "INFO");
                     repo.AddHealth(h);
 
 
                 }
-                catch (Exception) 
+                catch (Exception)
                 {
 
                     Health h = new Health(DateTime.Now, "NOT_OK");
                     Trace.WriteLine($"Notification service is down.....| {h.HealthDateTime} | {h.State}", "ERROR");
+                    List<AdminMail> mails = admins.GetAdmins().ToList();
+
+                    if (mails.Count > 0) 
+                    { 
+                        mails.ForEach((k) =>
+                        {
+
+                            smtp.SendEmail(k.Mail, $"Notification service is down !", $"Notification service is down.....| {h.HealthDateTime} | {h.State}");
+
+                        });
+                    }
+
                     repo.AddHealth(h);
                 }
 
@@ -116,6 +136,20 @@ namespace HealthMonitoringService
 
                     Health h = new Health(DateTime.Now, "NOT_OK");
                     Trace.WriteLine($"Reddit service is down.....| {h.HealthDateTime} | {h.State}", "ERROR");
+
+                    List<AdminMail> mails = admins.GetAdmins().ToList();
+
+                    if (mails.Count > 0)
+                    {
+                        mails.ForEach((k) =>
+                        {
+
+                            smtp.SendEmail(k.Mail, $"Reddit service is down !", $"Reddit service is down.....| {h.HealthDateTime} | {h.State}");
+
+                        });
+                    }
+
+
                     repo.AddHealth(h);
 
                 }

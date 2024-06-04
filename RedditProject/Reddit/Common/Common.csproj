@@ -48,6 +48,7 @@
     <Compile Include="DTO\PostDTO.cs" />
     <Compile Include="DTO\SubscribeDTO.cs" />
     <Compile Include="DTO\VotesDTO.cs" />
+    <Compile Include="IHealthMonitoring.cs" />
     <Compile Include="INotification.cs" />
     <Compile Include="IRedditService.cs" />
     <Compile Include="Models\UserLogin.cs" />

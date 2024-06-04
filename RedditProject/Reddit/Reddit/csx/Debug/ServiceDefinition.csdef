@@ -35,7 +35,9 @@
       <Setting name="DataConnectionString" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>
-    <Endpoints />
+    <Endpoints>
+      <InputEndpoint name="hms-admin" protocol="tcp" port="10178" localPort="10178" />
+    </Endpoints>
     <Certificates />
   </WorkerRole>
   <WorkerRole name="NotificationService" vmsize="Standard_D1_v2">

@@ -62,6 +62,9 @@
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
       <Setting name="DataConnectionString" />
     </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="hms-admin" protocol="tcp" port="10178" />
+    </Endpoints>
     <Contents>
       <Content destination=".\">
         <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\HealthMonitoringServiceContent\" />

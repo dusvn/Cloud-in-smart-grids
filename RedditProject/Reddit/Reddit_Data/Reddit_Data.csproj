@@ -53,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMail.cs" />
+    <Compile Include="AdminsRepository.cs" />
     <Compile Include="BlobHelper.cs" />
     <Compile Include="Comment.cs" />
     <Compile Include="CommentRepository.cs" />

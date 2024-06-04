@@ -1,6 +1,6 @@
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:06] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
-DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:44:07] Failed to save IIS Directory state
-DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:44:07] System.Runtime.InteropServices.COMException (0x80040154): Retrieving the COM class factory for component with CLSID {2B72133B-3F5B-4602-8952-803546CE3344} failed due to the following error: 80040154 Class not registered (Exception from HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:37] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
+DiagnosticsPlugin.exe Error: 0 : [4.6.2024. 00:48:37] Failed to save IIS Directory state
+DiagnosticsPlugin.exe Error: 0 : [4.6.2024. 00:48:37] System.Runtime.InteropServices.COMException (0x80040154): Retrieving the COM class factory for component with CLSID {2B72133B-3F5B-4602-8952-803546CE3344} failed due to the following error: 80040154 Class not registered (Exception from HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
    at System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
    at System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
    at System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK(RuntimeType serverType, Object[] props, Boolean bNewObj)
@@ -17,18 +17,18 @@ DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:44:07] System.Runtime.InteropServ
    at Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
    at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
    at Microsoft.Azure.Plugins.Plugin.DiagnosticsPluginManager.SaveIISDirectoryState()
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Starting DiagnosticsPlugin
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] DiagnosticsStoreRootPath set to: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Loading config file: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Config file to read: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Checking VM Type
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Extension set to Emulator Mode
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Reading XML configuration file
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Bypassing private config decryption
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] DiagnosticsStoreRootPath set to: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Loading config file: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Config file to read: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
   <WadCfg>
     <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
       <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
@@ -60,14 +60,13 @@ DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] <PublicConfig xmlns=
   </WadCfg>
   <StorageAccount>devstoreaccount1</StorageAccount>
 </PublicConfig>
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Private setting is loaded
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Is config json/xml loaded
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:08] Checking if configuration needs to be fetched from the storage account and doing so if needed.
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:09] Deleting directory C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105\Configuration
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:09] Successfully created checkpoint file C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105\Configuration\Checkpoint.txt
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:09] Will use local resource directory C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:09] Will use endpoint https://core.windows.net for storage.
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:11] Exception in creating the ServerManager; is IIS installed?
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Is config json/xml loaded
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:38] Checking if configuration needs to be fetched from the storage account and doing so if needed.
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:39] Successfully created checkpoint file C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:39] Will use local resource directory C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:39] Will use endpoint https://core.windows.net for storage.
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:41] Exception in creating the ServerManager; is IIS installed?
  Error:System.Runtime.InteropServices.COMException (0x80040154): Retrieving the COM class factory for component with CLSID {2B72133B-3F5B-4602-8952-803546CE3344} failed due to the following error: 80040154 Class not registered (Exception from HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
    at System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
    at System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
@@ -85,36 +84,23 @@ DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:11] Exception in creatin
    at Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
    at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
    at Microsoft.Azure.Plugins.Plugin.WadConfigProcessor.AddDirectories(EventsType mdsEvents, Directories wadDirectories)
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:11] Running in emulator mode, crash dumps not enabled
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:11] Checking to see if Application Insights extension needs to be configured.
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:44:12] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105"  -ConfigFile "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-36d2689c50c342c1bf4b6f7865d54d86  -TotalShutDownEvent WADDM-TotalShutDown-36d2689c50c342c1bf4b6f7865d54d86 -InitializedEvent WADM-StartUp-36d2689c50c342c1bf4b6f7865d54d86 -parent 14940 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
-DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:44:42] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:41] Running in emulator mode, crash dumps not enabled
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:41] Checking to see if Application Insights extension needs to be configured.
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:48:42] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105"  -ConfigFile "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthStatusService\approot\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-0649d5e800b545b394ebef5e54a51d8f  -TotalShutDownEvent WADDM-TotalShutDown-0649d5e800b545b394ebef5e54a51d8f -InitializedEvent WADM-StartUp-0649d5e800b545b394ebef5e54a51d8f -parent 9464 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
+DiagnosticsPlugin.exe Error: 0 : [4.6.2024. 00:49:12] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
    at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
    at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
    at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:45:12] MonAgentHost.exe started
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:45:12] DiagnoticsPlugin started.
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:45:12] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".
-DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:45:12] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:49:42] MonAgentHost.exe started
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:49:42] DiagnoticsPlugin started.
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:49:42] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".
+DiagnosticsPlugin.exe Error: 0 : [4.6.2024. 00:49:42] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
    at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
    at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
    at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
-DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:45:42] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+DiagnosticsPlugin.exe Error: 0 : [4.6.2024. 00:50:12] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
    at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
    at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
    at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:46:08] Failed to update IIS Directory state in directory monitor
+DiagnosticsPlugin.exe Information: 0 : [4.6.2024. 00:50:37] Failed to update IIS Directory state in directory monitor
 Retrieving the COM class factory for component with CLSID {2B72133B-3F5B-4602-8952-803546CE3344} failed due to the following error: 80040154 Class not registered (Exception from HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
-DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:46:12] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
-   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
-   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
-   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
-DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:46:42] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
-   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
-   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
-   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
-DiagnosticsPlugin.exe Information: 0 : [3.6.2024. 17:47:06] Total shutdown event signaled.
-DiagnosticsPlugin.exe Error: 0 : [3.6.2024. 17:47:12] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
-   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
-   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
-   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)

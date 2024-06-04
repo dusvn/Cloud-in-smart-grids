@@ -10,7 +10,7 @@ namespace RedditService.Provider
     {
         public string Message()
         {
-            return "Hi from RedditService";
+            return "RedditService is working...";
         }
     }
 }

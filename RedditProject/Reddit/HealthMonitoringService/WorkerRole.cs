@@ -2,6 +2,7 @@ using Common;
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
+using Reddit_Data;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -64,31 +65,64 @@ namespace HealthMonitoringService
 
         private async Task RunAsync(CancellationToken cancellationToken)
         {
+            HealthCheckRepository repo = new HealthCheckRepository();
             // TODO: Replace the following with your own logic.
             while (!cancellationToken.IsCancellationRequested)
             {
-
                 INotification proxy;
+                IRedditService proxy1;
+
                 var binding = new NetTcpBinding();
                 ChannelFactory<INotification> factory = new
                 ChannelFactory<INotification>(binding, new
                 EndpointAddress("net.tcp://localhost:10100/health-monitoring"));
-                proxy = factory.CreateChannel();
 
-
-                IRedditService proxy1;
                 var binding1 = new NetTcpBinding();
                 ChannelFactory<IRedditService> factory1 = new
                 ChannelFactory<IRedditService>(binding1, new
                 EndpointAddress("net.tcp://localhost:10110/health-monitoring"));
-                proxy1 = factory1.CreateChannel();
 
 
-                string notification = proxy.Message();
-                string redditService = proxy1.Message();
+                try
+                {
 
-                Trace.TraceInformation($"Working {notification}  {redditService}");
-                await Task.Delay(1000);
+                    proxy = factory.CreateChannel();
+                    string notification = proxy.Message();
+                    Health h = new Health(DateTime.Now,"OK");
+                    Trace.WriteLine($"{notification} | {h.HealthDateTime} | {h.State}", "INFO");
+                    repo.AddHealth(h);
+
+
+                }
+                catch (Exception) 
+                {
+
+                    Health h = new Health(DateTime.Now, "NOT_OK");
+                    Trace.WriteLine($"Notification service is down.....| {h.HealthDateTime} | {h.State}", "ERROR");
+                    repo.AddHealth(h);
+                }
+
+                try {
+
+                    
+                    proxy1 = factory1.CreateChannel();
+                    string redditService = proxy1.Message();
+                    Health h = new Health(DateTime.Now, "OK");
+                    Trace.WriteLine($"{redditService}| {h.HealthDateTime} | {h.State}", "INFO");
+                    repo.AddHealth(h);
+
+                } catch (Exception) 
+                {
+
+                    Health h = new Health(DateTime.Now, "NOT_OK");
+                    Trace.WriteLine($"Reddit service is down.....| {h.HealthDateTime} | {h.State}", "ERROR");
+                    repo.AddHealth(h);
+
+                }
+
+
+
+                await Task.Delay(5000);
             }
         }
     }

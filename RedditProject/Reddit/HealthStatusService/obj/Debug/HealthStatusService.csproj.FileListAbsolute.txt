@@ -230,3 +230,12 @@ C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\
 C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\obj\Debug\HealthSt.0ADD956A.Up2Date
 C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\obj\Debug\HealthStatusService.dll
 C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\obj\Debug\HealthStatusService.pdb
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Reddit_Data.dll
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Reddit_Data.pdb
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\HealthStatusService\bin\Microsoft.Azure.KeyVault.Core.xml

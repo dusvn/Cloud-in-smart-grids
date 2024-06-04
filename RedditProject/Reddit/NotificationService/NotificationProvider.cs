@@ -11,7 +11,7 @@ namespace NotificationService
     {
         public string Message()
         {
-            return "Hi from NotificationService!";
+            return "NotificationService is working...";
         }
     }
 }

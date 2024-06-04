@@ -56,6 +56,8 @@
     <Compile Include="BlobHelper.cs" />
     <Compile Include="Comment.cs" />
     <Compile Include="CommentRepository.cs" />
+    <Compile Include="Health.cs" />
+    <Compile Include="HealthCheckRepository.cs" />
     <Compile Include="Mails.cs" />
     <Compile Include="QueueHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

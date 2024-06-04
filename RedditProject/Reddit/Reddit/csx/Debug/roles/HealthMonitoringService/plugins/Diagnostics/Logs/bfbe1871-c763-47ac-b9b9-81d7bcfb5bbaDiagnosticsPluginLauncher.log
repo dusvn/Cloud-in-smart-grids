@@ -1,0 +1,19 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:30] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:30] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:30] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:30] DiagnosticsStoreRootPath set to: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:30] Loading config file: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:30] Config file to read: C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:31] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:31] Emulator config file set to C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\HealthMonitoringService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:31] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:31] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:31] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:31] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:32] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:32] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:32] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:32] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:48:32] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:49:47] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [4.6.2024. 00:49:47] DiagnosticPlugin exited with code 0

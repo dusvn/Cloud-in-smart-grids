@@ -60,6 +60,7 @@
     <Compile Include="NotificationProvider.cs" />
     <Compile Include="NotificationServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMTPMailSender.cs" />
     <Compile Include="WorkerRole.cs" />
   </ItemGroup>
   <ItemGroup>

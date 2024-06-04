@@ -1,0 +1,22 @@
+.blackDashboar-header {
+    background-color: rgb(255,69,0);
+    color: white;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 1rem;
+  }
+  
+  .button-logout {
+    background-color: black; /* Change this to your desired color */
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border : radius;
+  }
+  
+  .button-logout div {
+    display: flex;
+    align-items: center;
+  }
+  

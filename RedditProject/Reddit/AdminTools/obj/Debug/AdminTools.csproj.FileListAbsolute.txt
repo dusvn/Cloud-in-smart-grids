@@ -1,0 +1,10 @@
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\bin\Debug\AdminTools.exe.config
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\bin\Debug\AdminTools.exe
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\bin\Debug\AdminTools.pdb
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\bin\Debug\Common.dll
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\bin\Debug\Common.pdb
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\obj\Debug\AdminTools.csproj.AssemblyReference.cache
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\obj\Debug\AdminTools.csproj.CoreCompileInputs.cache
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\obj\Debug\AdminTools.csproj.Up2Date
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\obj\Debug\AdminTools.exe
+C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\AdminTools\obj\Debug\AdminTools.pdb

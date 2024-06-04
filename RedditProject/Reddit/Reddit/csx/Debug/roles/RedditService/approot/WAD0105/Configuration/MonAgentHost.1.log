@@ -1,110 +1,37 @@
-﻿Info  (2024-05-17T21:24:20Z): MonAgentHost.exe - Monitoring Agent Version 33.01.05 - Mar  8 2016 11:11:04 - (Jovan) amd64 - OS 6.2.9200
-Info  (2024-05-17T21:24:20Z): MonAgentHost.exe - Successfully parsed command line arguments.
-Info  (2024-05-17T21:24:20Z): MonAgentHost.exe - Actual command is : -serviceShutdown MonAgentShutdownEvent.3964 -parent 3964 -deploymentdir "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64" -LocalPath "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105" -ConfigFile "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml" "-ShutDownEvent" "WADDM-ShutDown-87d8985d64be49b0a9b1070fbc166e9e" "-TotalShutDownEvent" "WADDM-TotalShutDown-87d8985d64be49b0a9b1070fbc166e9e" "-InitializedEvent" "WADM-StartUp-87d8985d64be49b0a9b1070fbc166e9e" "-events" "-wadVer1v5" "-UseProxyServer" "-XStoreAccounts" "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"  
-Info  (2024-05-17T21:24:20Z): MonAgentHost.exe - Current agent working directory is 'C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64'
-Info  (2024-05-17T21:24:20Z): MonAgentHost.exe - Waiting for parent process 14176 of the host to terminate.
-Info  (2024-05-17T21:24:20Z): MonAgentHost.exe - Starting agent manager: 'C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64\MonAgentManager.exe -serviceShutdown MonAgentShutdownEvent.3964 -parent 3964 -deploymentdir "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64" -LocalPath "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105" -ConfigFile "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml" "-ShutDownEvent" "WADDM-ShutDown-87d8985d64be49b0a9b1070fbc166e9e" "-TotalShutDownEvent" "WADDM-TotalShutDown-87d8985d64be49b0a9b1070fbc166e9e" "-InitializedEvent" "WADM-StartUp-87d8985d64be49b0a9b1070fbc166e9e" "-events" "-wadVer1v5" "-UseProxyServer" "-XStoreAccounts" "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"  -LogPath "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MonAgentHost.1.log"'
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Monitoring Agent Version 33.01.05 - Mar  8 2016 11:12:47 - (Jovan) amd64 - OS 6.2.9200
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Agent will exit when WADDM-ShutDown-87d8985d64be49b0a9b1070fbc166e9e is signaled.
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Agent will exit when WADDM-TotalShutDown-87d8985d64be49b0a9b1070fbc166e9e is signaled.
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Table directory is 'C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Tables'
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Agent working directory is C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64; running from deployment directory
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Successfully parsed command line arguments.
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Actual command is :   -deploymentdir "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64" -LocalPath "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-87d8985d64be49b0a9b1070fbc166e9e" -events -wadVer1v5 -UseProxyServer   -ConfigFile "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 19168 -ShutDownEvent WADDM-ShutDown-87d8985d64be49b0a9b1070fbc166e9e3964 -TotalShutDownEvent WADDM-TotalShutDown-87d8985d64be49b0a9b1070fbc166e9e3964 
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Starting agent: 'C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64\AgentCore.exe   -deploymentdir "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64" -LocalPath "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-87d8985d64be49b0a9b1070fbc166e9e" -events -wadVer1v5 -UseProxyServer   -ConfigFile "C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 19168 -ShutDownEvent WADDM-ShutDown-87d8985d64be49b0a9b1070fbc166e9e3964 -TotalShutDownEvent WADDM-TotalShutDown-87d8985d64be49b0a9b1070fbc166e9e3964 -xstoreaccounts "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"'
-Info  (2024-05-17T21:24:21Z): MonAgentManager.exe - Waiting for parent process 3964 of the host to terminate.
-Info  (2024-05-17T21:24:25Z): MonAgentManager.exe - Dumping MA error and warning events from C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
-Info  (2024-05-17T21:24:30Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
-Info  (2024-05-17T21:24:32Z): MonAgentManager.exe - MA is running with original configuration file 'C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
-Info  (2024-05-17T21:24:32Z): MonAgentManager.exe - Cpu rate for job is 50% and it is a hard limit (Agent may run slower to conform to the Cpu setting).
-Info  (2024-05-17T21:24:33Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
-Info  (2024-05-17T21:24:33Z): MonAgentManager.exe - No working set limit for job set
-Info  (2024-05-17T21:24:33Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(75)/RedditService/deployment29(75).Reddit.RedditService_IN_0'
-Info  (2024-05-17T21:24:33Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled
-Info  (2024-05-17T21:27:27Z): MonAgentManager.exe - Dumping MA error and warning events from C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
-Error (2024-05-17T21:27:28Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:82298645-4eb0-4ec6-a4c8-e8e07ab12f8d MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\ISAPI Extension Requests/sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
-Error (2024-05-17T21:27:28Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:82298645-4eb0-4ec6-a4c8-e8e07ab12f8d MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\Bytes Total/Sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
-Error (2024-05-17T21:27:28Z): SystemEventsListener.dll - MAEventTable: Level:2 ActivityId:0f37f170-7754-4ff6-a807-d1f6f55ccfea MDRESULT:0x00000000 ErrorCode(15029): Message:Failed to format message
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b14a8f5b-5798-4b32-917e-2aef4021e895 MDRESULT:0x80050006 ErrorCode(0): Message:GetRequestStatusCode failed 0x0, StatusCode = 500. Internal Server Error. RequestId=
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b14a8f5b-5798-4b32-917e-2aef4021e895 MDRESULT:0x80050006 ErrorCode(0): Message:The response text of last failure is: 
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b14a8f5b-5798-4b32-917e-2aef4021e895 MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADPerformanceCountersTable as Xstore rejected the request
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b14a8f5b-5798-4b32-917e-2aef4021e895 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(6 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+﻿Info  (2024-06-04T09:57:11Z): MonAgentHost.exe - Monitoring Agent Version 33.01.05 - Mar  8 2016 11:11:04 - (Jovan) amd64 - OS 6.2.9200
+Info  (2024-06-04T09:57:11Z): MonAgentHost.exe - Successfully parsed command line arguments.
+Info  (2024-06-04T09:57:11Z): MonAgentHost.exe - Actual command is : -serviceShutdown MonAgentShutdownEvent.17708 -parent 17708 -deploymentdir "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64" -LocalPath "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105" -ConfigFile "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml" "-ShutDownEvent" "WADDM-ShutDown-ec10c8670a68411581719ca24577184f" "-TotalShutDownEvent" "WADDM-TotalShutDown-ec10c8670a68411581719ca24577184f" "-InitializedEvent" "WADM-StartUp-ec10c8670a68411581719ca24577184f" "-events" "-wadVer1v5" "-UseProxyServer" "-XStoreAccounts" "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"  
+Info  (2024-06-04T09:57:11Z): MonAgentHost.exe - Current agent working directory is 'C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64'
+Info  (2024-06-04T09:57:11Z): MonAgentHost.exe - Waiting for parent process 22720 of the host to terminate.
+Info  (2024-06-04T09:57:12Z): MonAgentHost.exe - Starting agent manager: 'C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64\MonAgentManager.exe -serviceShutdown MonAgentShutdownEvent.17708 -parent 17708 -deploymentdir "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64" -LocalPath "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105" -ConfigFile "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml" "-ShutDownEvent" "WADDM-ShutDown-ec10c8670a68411581719ca24577184f" "-TotalShutDownEvent" "WADDM-TotalShutDown-ec10c8670a68411581719ca24577184f" "-InitializedEvent" "WADM-StartUp-ec10c8670a68411581719ca24577184f" "-events" "-wadVer1v5" "-UseProxyServer" "-XStoreAccounts" "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"  -LogPath "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MonAgentHost.1.log"'
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Monitoring Agent Version 33.01.05 - Mar  8 2016 11:12:47 - (Jovan) amd64 - OS 6.2.9200
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Agent will exit when WADDM-ShutDown-ec10c8670a68411581719ca24577184f is signaled.
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Agent will exit when WADDM-TotalShutDown-ec10c8670a68411581719ca24577184f is signaled.
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Table directory is 'C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Tables'
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Agent working directory is C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64; running from deployment directory
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Successfully parsed command line arguments.
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Actual command is :   -deploymentdir "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64" -LocalPath "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-ec10c8670a68411581719ca24577184f" -events -wadVer1v5 -UseProxyServer   -ConfigFile "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 19964 -ShutDownEvent WADDM-ShutDown-ec10c8670a68411581719ca24577184f17708 -TotalShutDownEvent WADDM-TotalShutDown-ec10c8670a68411581719ca24577184f17708 
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Waiting for parent process 17708 of the host to terminate.
+Info  (2024-06-04T09:57:15Z): MonAgentManager.exe - Starting agent: 'C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64\AgentCore.exe   -deploymentdir "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\plugins\Diagnostics\Monitor\x64" -LocalPath "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-ec10c8670a68411581719ca24577184f" -events -wadVer1v5 -UseProxyServer   -ConfigFile "C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 19964 -ShutDownEvent WADDM-ShutDown-ec10c8670a68411581719ca24577184f17708 -TotalShutDownEvent WADDM-TotalShutDown-ec10c8670a68411581719ca24577184f17708 -xstoreaccounts "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"'
+Info  (2024-06-04T09:57:22Z): MonAgentManager.exe - Dumping MA error and warning events from C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Info  (2024-06-04T09:57:24Z): MonAgentManager.exe - MA is running with original configuration file 'C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
+Info  (2024-06-04T09:57:24Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
+Info  (2024-06-04T09:57:24Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(170)/RedditService/deployment29(170).Reddit.RedditService_IN_0'
+Info  (2024-06-04T09:57:25Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled
+Error (2024-06-04T09:57:25Z): SystemEventsListener.dll - MAEventTable: Level:2 ActivityId:88e414eb-9fbc-4966-8224-63783bc15c7e MDRESULT:0x00000000 ErrorCode(15029): Message:Failed to format message
+Info  (2024-06-04T09:57:27Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-04T09:57:27Z): MonAgentManager.exe - Cpu rate for job is 50% and it is a hard limit (Agent may run slower to conform to the Cpu setting).
+Info  (2024-06-04T09:57:27Z): MonAgentManager.exe - No working set limit for job set
+Info  (2024-06-04T10:01:07Z): MonAgentManager.exe - Dumping MA error and warning events from C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Error (2024-06-04T10:01:07Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:1fca1146-fbeb-44c4-83f5-67c5271367d9 MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\ISAPI Extension Requests/sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
+Error (2024-06-04T10:01:07Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:1fca1146-fbeb-44c4-83f5-67c5271367d9 MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\Bytes Total/Sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
+Error (2024-06-04T10:01:07Z): SystemEventsListener.dll - MAEventTable: Level:2 ActivityId:7077fb1a-5a6b-41ad-b710-b1b87afbd012 MDRESULT:0x00000000 ErrorCode(15029): Message:Failed to format message
+Error (2024-06-04T10:01:07Z): NetTransport - MAEventTable: Level:2 ActivityId:95b0feed-3ced-4a5e-b16e-a68f517b46d0 MDRESULT:0x80050006 ErrorCode(0): Message:GetRequestStatusCode failed 0x0, StatusCode = 500. Internal Server Error. RequestId=
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:95b0feed-3ced-4a5e-b16e-a68f517b46d0 MDRESULT:0x80050006 ErrorCode(0): Message:The response text of last failure is: 
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:95b0feed-3ced-4a5e-b16e-a68f517b46d0 MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADWindowsEventLogsTable as Xstore rejected the request
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:95b0feed-3ced-4a5e-b16e-a68f517b46d0 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(14 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
 Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 9775
-
---changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Type: application/http
-Content-Transfer-Encoding:binary
-
-POST http://127.0.0.1:10002/devstoreaccount1/WADPerformanceCountersTable HTTP/1.1
-Host: http://127.0.0.1:10002
-Prefer: return-no-content
-Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:25:49 GMT
-Content-ID: 1
-Content-Length: 1238
-
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
-xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:28.1828002Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:CounterName m:type="Edm.String">\ASP.NET Applications(__Total__)\Errors Total/Sec</d:CounterName><d:CounterValue m:type="Edm.Double">0.000000</d:CounterValue><d:EventTickCount m:type="Edm.Int64">638515778681828002</d:EventTickCount><d:PartitionKey>0638515778400000000</d:PartitionKey><d:RowKey>deployment29(75)___RedditService___deployment29(75).Reddit.RedditService_IN_0___0000000004295558154</d:RowKey><d:RowIndex m:type="Edm.String">0000000004295558154</d:RowIndex><d:TIMESTAMP m:type="Edm.DateTime">2024-05-17T21:24:00Z</d:TIMESTAMP></m:properties></content></entry>
---changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Type: application/http
-Content-Transfer-Encoding:binary
-
-POST http://127.0.0.1:10002/devstoreaccou
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b14a8f5b-5798-4b32-917e-2aef4021e895 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADPerformanceCountersTable; partition key 0638515778400000000
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b14a8f5b-5798-4b32-917e-2aef4021e895 MDRESULT:0x80050002 ErrorCode(0): Message:Fail to finalize the XTableConnection object
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b14a8f5b-5798-4b32-917e-2aef4021e895 MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
-Error (2024-05-17T21:27:28Z): Tasks - MAEventTable: Level:2 ActivityId:b14a8f5b-5798-4b32-917e-2aef4021e895 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(PerformanceCountersTableQuery_PerformanceCountersTable_WADPerformanceCountersTable_PT1M_XTableWadAccount) failed; bytes sent 0
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b865d122-5861-41b0-8509-b1b8c9b829bb MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable as Xstore rejected the request
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b865d122-5861-41b0-8509-b1b8c9b829bb MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(100 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
-Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 211925
-
---changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Type: application/http
-Content-Transfer-Encoding:binary
-
-POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
-Host: http://127.0.0.1:10002
-Prefer: return-no-content
-Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:25:54 GMT
-Content-ID: 1
-Content-Length: 1810
-
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
-xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:26.0950000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">24908</d:Pid><d:Tid m:type="Edm.Int32">17548</d:Tid><d:ActivityId m:type="Edm.String">82298645-4eb0-4ec6-a4c8-e8e07ab12f8d</d:ActivityId><d:Function m:type="Edm.String">SystemCounter::GetCounterNames</d:Function><d:Line m:type="Edm.Int32">1216</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">-1073738824</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">PdhAddEnglishCounter(\Web Service(_Total)\ISAPI Extension Requests/sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b865d122-5861-41b0-8509-b1b8c9b829bb MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADDiagnosticInfrastructureLogsTable; partition key 0638515778400000000
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:b865d122-5861-41b0-8509-b1b8c9b829bb MDRESULT:0x80050002 ErrorCode(0): Message:Failed to push out message <?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
-xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:39.8910000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">24908</d:Pid><d:Tid m:type="Edm.Int32">4932</d:Tid><d:ActivityId m:type="Edm.String">c0f1eba5-7b6c-4b31-9ce8-02b83c210fdc</d:ActivityId><d:Function m:type="Edm.String">SystemEventsListener::GetMessageString</d:Function><d:Line m:type="Edm.Int32">1855</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">15029</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">Failed to format message</d:Message><d:EventTickCount m:type="Edm.Int64">638515778798910000</d:EventTickCount><d:PartitionKey>0638515778400000000</d:PartitionKey><d:RowKey>deployment29(75)___RedditService___deployment29(75).Reddit.RedditService_IN_0___0000000863289086143</d:RowKey><d:RowIndex m:type="Edm.String">0000000863289086143</d:RowIndex><d:TIMESTAMP m:type="Edm.DateTime">2024-05-17T21:24:00Z</d:TIMESTAMP></m:properties></content></entry>
-Error (2024-05-17T21:27:28Z): Tasks - MAEventTable: Level:2 ActivityId:b865d122-5861-41b0-8509-b1b8c9b829bb MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::Push(MAEventTableDiagnosticInfrastructureLogsTableQuery_MAEventTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount, 133604546400000000) failed; bytes sent 0
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:be60afe6-6176-4dbb-baaa-6d5baa1f30b4 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(7 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
-Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 17206
-
---changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Type: application/http
-Content-Transfer-Encoding:binary
-
-POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
-Host: http://127.0.0.1:10002
-Prefer: return-no-content
-Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:25:56 GMT
-Content-ID: 1
-Content-Length: 2046
-
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
-xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:50.4119007Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">22792</d:Pid><d:Tid m:type="Edm.Int32">17468</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endT
-Error (2024-05-17T21:27:28Z): Tasks - MAEventTable: Level:2 ActivityId:be60afe6-6176-4dbb-baaa-6d5baa1f30b4 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(DiagnosticInfrastructureLogsTableQuery_DiagnosticInfrastructureLogsTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:c7d15728-f339-4b28-bc8a-3ed3a85f94b5 MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADWindowsEventLogsTable as Xstore rejected the request
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:c7d15728-f339-4b28-bc8a-3ed3a85f94b5 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(100 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
-Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 326684
+Content-Length: 42370
 
 --changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
 Content-Type: application/http
@@ -114,20 +41,43 @@ POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
 Host: http://127.0.0.1:10002
 Prefer: return-no-content
 Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:26:00 GMT
+x-ms-date: Tue, 04 Jun 2024 09:58:13 GMT
 Content-ID: 1
-Content-Length: 2392
+Content-Length: 2343
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:15.9598227Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Failed to save IIS Directory state</d:Description><d:RawXml m:type="Edm.String">&lt;Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'&gt;&lt;System&gt;&lt;Provider Name='AzureDiagnostics'/&gt;&lt;EventID Qualifiers='0'&gt;0&lt;/EventID&gt
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:c7d15728-f339-4b28-bc8a-3ed3a85f94b5 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADWindowsEventLogsTable; partition key 0638515778400000000
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:c7d15728-f339-4b28-bc8a-3ed3a85f94b5 MDRESULT:0x80050002 ErrorCode(0): Message:Failed to flush out the buffered messages when closing the channel; lost 19 messages
-Error (2024-05-17T21:27:28Z): Tasks - MAEventTable: Level:2 ActivityId:c7d15728-f339-4b28-bc8a-3ed3a85f94b5 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(WindowsEventLogsTableQuery_WindowsEventLogsTable_WADWindowsEventLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
-Error (2024-05-17T21:27:28Z): SelfMonitoring - MAEventTable: Level:2 ActivityId:b865d122-5861-41b0-8509-b1b8c9b829bb MDRESULT:0x80070004 ErrorCode(0): Message:The \Process(MonAgent)\Virtual Bytes counter shows over the last 0ms a usage of 4479654570.67; the limit is 2147483648.00
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:e6bf9848-c4a3-49e4-8ee6-d6241160affd MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(6 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:56:59.4995035Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">Windows Azure Runtime 2.7.0.0</d:ProviderName><d:EventId m:type="Edm.Int32">20001</d:EventId><d:Level m:type="Edm.Int32">4</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">1</d:Task><d:Channel m:type="Edm.String">Windows Azure</d:Channel><d:Description m:type="Edm.String">%1</d:Description><d:RawXml m:type="Edm.String">&lt;Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'&gt;&lt;System&gt;&lt;Provider Name='Windows Azure Runtime 2.7.0.0'/&gt;&lt;EventID Qualifiers='0'&gt;20001&lt;/EventI
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:95b0feed-3ced-4a5e-b16e-a68f517b46d0 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADWindowsEventLogsTable; partition key 0638530917600000000
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:95b0feed-3ced-4a5e-b16e-a68f517b46d0 MDRESULT:0x80050002 ErrorCode(0): Message:Fail to finalize the XTableConnection object
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:95b0feed-3ced-4a5e-b16e-a68f517b46d0 MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
+Error (2024-06-04T10:01:08Z): Tasks - MAEventTable: Level:2 ActivityId:95b0feed-3ced-4a5e-b16e-a68f517b46d0 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(WindowsEventLogsTableQuery_WindowsEventLogsTable_WADWindowsEventLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:474d3dbb-fd49-4923-917d-369541e2e3e8 MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable as Xstore rejected the request
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:474d3dbb-fd49-4923-917d-369541e2e3e8 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(7 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
 Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 9775
+Content-Length: 17237
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Tue, 04 Jun 2024 09:58:33 GMT
+Content-ID: 1
+Content-Length: 2050
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:41.4106438Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">12144</d:Pid><d:Tid m:type="Edm.Int32">15728</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime en
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:474d3dbb-fd49-4923-917d-369541e2e3e8 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADDiagnosticInfrastructureLogsTable; partition key 0638530918200000000
+Error (2024-06-04T10:01:08Z): Tasks - MAEventTable: Level:2 ActivityId:474d3dbb-fd49-4923-917d-369541e2e3e8 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(DiagnosticInfrastructureLogsTableQuery_DiagnosticInfrastructureLogsTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:863025ed-44eb-47f5-a07f-b89ee21a6bcb MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADPerformanceCountersTable as Xstore rejected the request
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:863025ed-44eb-47f5-a07f-b89ee21a6bcb MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(6 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 9800
 
 --changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
 Content-Type: application/http
@@ -137,22 +87,103 @@ POST http://127.0.0.1:10002/devstoreaccount1/WADPerformanceCountersTable HTTP/1.
 Host: http://127.0.0.1:10002
 Prefer: return-no-content
 Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:26:49 GMT
+x-ms-date: Tue, 04 Jun 2024 09:59:04 GMT
 Content-ID: 1
-Content-Length: 1238
+Content-Length: 1242
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:28.1828002Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:CounterName m:type="Edm.String">\ASP.NET Applications(__Total__)\Errors Total/Sec</d:CounterName><d:CounterValue m:type="Edm.Double">0.000000</d:CounterValue><d:EventTickCount m:type="Edm.Int64">638515778681828002</d:EventTickCount><d:PartitionKey>0638515778400000000</d:PartitionKey><d:RowKey>deployment29(75)___RedditService___deployment29(75).Reddit.RedditService_IN_0___0000000004295558154</d:RowKey><d:RowIndex m:type="Edm.String">0000000004295558154</d:RowIndex><d:TIMESTAMP m:type="Edm.DateTime">2024-05-17T21:24:00Z</d:TIMESTAMP></m:properties></content></entry>
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:24.9032458Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:CounterName m:type="Edm.String">\ASP.NET Applications(__Total__)\Errors Total/Sec</d:CounterName><d:CounterValue m:type="Edm.Double">0.000000</d:CounterValue><d:EventTickCount m:type="Edm.Int64">638530918449032458</d:EventTickCount><d:PartitionKey>0638530918200000000</d:PartitionKey><d:RowKey>deployment29(170)___RedditService___deployment29(170).Reddit.RedditService_IN_0___0000000004295558154</d:RowKey><d:RowIndex m:type="Edm.String">0000000004295558154</d:RowIndex><d:TIMESTAMP m:type="Edm.DateTime">2024-06-04T09:57:00Z</d:TIMESTAMP></m:properties></content></entry>
 --changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
 Content-Type: application/http
 Content-Transfer-Encoding:binary
 
-POST http://127.0.0.1:10002/devstoreaccou
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:8632ed5a-ebf2-4c5c-9753-6e2a9492dbea MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable SchemasTable as Xstore rejected the request
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:8632ed5a-ebf2-4c5c-9753-6e2a9492dbea MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(2 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+POST http://127.0.0.1:10002/devstorea
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:863025ed-44eb-47f5-a07f-b89ee21a6bcb MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADPerformanceCountersTable; partition key 0638530918200000000
+Error (2024-06-04T10:01:08Z): Tasks - MAEventTable: Level:2 ActivityId:863025ed-44eb-47f5-a07f-b89ee21a6bcb MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(PerformanceCountersTableQuery_PerformanceCountersTable_WADPerformanceCountersTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:c80bdf8b-2d30-47cf-83e5-c40e9214beed MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(100 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
 Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 6640
+Content-Length: 212363
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Tue, 04 Jun 2024 09:59:04 GMT
+Content-ID: 1
+Content-Length: 1722
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:22.5120000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">19764</d:Pid><d:Tid m:type="Edm.Int32">15052</d:Tid><d:ActivityId m:type="Edm.String">88e414eb-9fbc-4966-8224-63783bc15c7e</d:ActivityId><d:Function m:type="Edm.String">SystemEventsListener::GetMessageString</d:Function><d:Line m:type="Edm.Int32">1855</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">15029</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">Failed to format message</d:Message><d:EventTickCount m:type="Edm.Int64">638530918425120000</d:EventTickCount><d:P
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:c80bdf8b-2d30-47cf-83e5-c40e9214beed MDRESULT:0x80050002 ErrorCode(0): Message:Failed to push out message <?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:28.9790000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">19764</d:Pid><d:Tid m:type="Edm.Int32">19476</d:Tid><d:ActivityId m:type="Edm.String">7077fb1a-5a6b-41ad-b710-b1b87afbd012</d:ActivityId><d:Function m:type="Edm.String">SystemEventsListener::GetMessageString</d:Function><d:Line m:type="Edm.Int32">1855</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">15029</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">Failed to format message</d:Message><d:EventTickCount m:type="Edm.Int64">638530918489790000</d:EventTickCount><d:PartitionKey>0638530918200000000</d:PartitionKey><d:RowKey>deployment29(170)___RedditService___deployment29(170).Reddit.RedditService_IN_0___0000000863289086143</d:RowKey><d:RowIndex m:type="Edm.String">0000000863289086143</d:RowIndex><d:TIMESTAMP m:type="Edm.DateTime">2024-06-04T09:57:00Z</d:TIMESTAMP></m:properties></content></entry>
+Error (2024-06-04T10:01:08Z): Tasks - MAEventTable: Level:2 ActivityId:c80bdf8b-2d30-47cf-83e5-c40e9214beed MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::Push(MAEventTableDiagnosticInfrastructureLogsTableQuery_MAEventTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount, 133619686200000000) failed; bytes sent 0
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:97f4ae71-de09-4834-b85f-0524fb944542 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(14 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 42370
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Tue, 04 Jun 2024 09:59:14 GMT
+Content-ID: 1
+Content-Length: 2343
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:56:59.4995035Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">Windows Azure Runtime 2.7.0.0</d:ProviderName><d:EventId m:type="Edm.Int32">20001</d:EventId><d:Level m:type="Edm.Int32">4</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">1</d:Task><d:Channel m:type="Edm.String">Windows Azure</d:Channel><d:Description m:type="Edm.String">%1</d:Description><d:RawXml m:type="Edm.String">&lt;Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'&gt;&lt;System&gt;&lt;Provider Name='Windows Azure Runtime 2.7.0.0'/&gt;&lt;EventID Qualifiers='0'&gt;20001&lt;/EventI
+Error (2024-06-04T10:01:08Z): SelfMonitoring - MAEventTable: Level:2 ActivityId:c80bdf8b-2d30-47cf-83e5-c40e9214beed MDRESULT:0x80070004 ErrorCode(0): Message:The \Process(MonAgent)\Virtual Bytes counter shows over the last 0ms a usage of 4467464874.67; the limit is 2147483648.00
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:e0718d42-7018-498c-8024-997fd7ea4520 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(7 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 17237
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Tue, 04 Jun 2024 09:59:33 GMT
+Content-ID: 1
+Content-Length: 2050
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:41.4106438Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">12144</d:Pid><d:Tid m:type="Edm.Int32">15728</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime en
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:520e6139-8e09-4ecb-8a44-d9af570c30d7 MDRESULT:0x80010008 ErrorCode(0): Message:Request #1 failed in the batch request with status code 400
+Error (2024-06-04T10:01:08Z): NetTransport - MAEventTable: Level:2 ActivityId:520e6139-8e09-4ecb-8a44-d9af570c30d7 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changesetresponse_77162fcd-b8da-41ac-a9f8-9357efbbd000
+
+--changesetresponse_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 400 Bad Request
+Content-ID: 1
+DataServiceVersion: 3.0;
+Content-Type: application/json;odata=minimalmetadata;charset=utf-8
+
+{"odata.error":{"code":"InvalidInput","message":{"lang":"en-US","value":"0:An error occurred while processing this request.\nRequestId:14157a64-b85c-43e3-9639-64c882e59914\nTime:2024-06-04T09:59:49.075Z"}}}
+--changesetresponse_77162fcd-b8da-41ac-a9f8-9357efbbd000--
+--batchresponse_36522ad7-fc75-4b56-8c71-56071383e000--
+.
+Error (2024-06-04T10:01:09Z): NetTransport - MAEventTable: Level:2 ActivityId:520e6139-8e09-4ecb-8a44-d9af570c30d7 MDRESULT:0x80010008 ErrorCode(0): Message:Failed to send bytes to XTable SchemasTable as Xstore rejected the request
+Error (2024-06-04T10:01:09Z): NetTransport - MAEventTable: Level:2 ActivityId:520e6139-8e09-4ecb-8a44-d9af570c30d7 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(1 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 3465
 
 --changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
 Content-Type: application/http
@@ -162,19 +193,43 @@ POST http://127.0.0.1:10002/devstoreaccount1/SchemasTable HTTP/1.1
 Host: http://127.0.0.1:10002
 Prefer: return-no-content
 Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:26:52 GMT
+x-ms-date: Tue, 04 Jun 2024 09:59:49 GMT
 Content-ID: 1
-Content-Length: 2694
+Content-Length: 2991
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>1601-01-01T00:00:00.0000001Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PhysicalTableName m:type="Edm.String">WADDiagnosticInfrastructureLogsTable</d:PhysicalTableName><d:MD5Hash m:type="Edm.String">94dd021bb0e78218d699df44697538aa</d:MD5Hash><d:Schema m:type="Edm.String">&lt;MdsConfig&gt;&lt;Schemas&gt;&lt;Schema name=&quot;Schema_94dd021bb0e78218d699df44697538aa&quot;&gt;&lt;Column name=&quot;TIMESTAMP&quot; type=&quot;mt:utc&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;PreciseTimeStamp&quot; type=&quot;mt:utc&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;DeploymentId&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;Role&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;RoleInstance&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;Level&quot; type=&quot;mt:int32&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;ProviderGuid&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;EventId&quot; type=&quot;mt:int32&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;Pid&quot; type=&quot;mt:int32&quot;&gt;&lt;/Column&gt;&lt;Column
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:8632ed5a-ebf2-4c5c-9753-6e2a9492dbea MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable SchemasTable; partition key 0000000000000000006___0504911232000000001
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:8632ed5a-ebf2-4c5c-9753-6e2a9492dbea MDRESULT:0x80050002 ErrorCode(0): Message:Failed to flush out the buffered messages when closing the channel; lost 3 messages
-Error (2024-05-17T21:27:28Z): Tasks - MAEventTable: Level:2 ActivityId:8632ed5a-ebf2-4c5c-9753-6e2a9492dbea MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(MAUploadSchemaTableWadAccountQuery_MAUploadSchemaTable_SchemasTable_PT1M_XTableWadAccount) failed; bytes sent 0
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:f22f76ad-5391-4c95-9b32-935014fb4420 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(100 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>1601-01-01T00:00:00.0000001Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PhysicalTableName m:type="Edm.String">WADWindowsEventLogsTable</d:PhysicalTableName><d:MD5Hash m:type="Edm.String">4906b5683cf854da3585c69edfc15b09</d:MD5Hash><d:Schema m:type="Edm.String">&lt;MdsConfig&gt;&lt;Schemas&gt;&lt;Schema name=&quot;Schema_4906b5683cf854da3585c69edfc15b09&quot;&gt;&lt;Column name=&quot;TIMESTAMP&quot; type=&quot;mt:utc&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;PreciseTimeStamp&quot; type=&quot;mt:utc&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;DeploymentId&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;Role&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;RoleInstance&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;ProviderGuid&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;ProviderName&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;EventId&quot; type=&quot;mt:int32&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;Level&quot; type=&quot;mt:int32&quot;&gt;&lt;/Column&gt;&lt;Column nam
+Error (2024-06-04T10:01:09Z): NetTransport - MAEventTable: Level:2 ActivityId:520e6139-8e09-4ecb-8a44-d9af570c30d7 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable SchemasTable; partition key 0000000000000000004___0504911232000000001
+Error (2024-06-04T10:01:09Z): NetTransport - MAEventTable: Level:2 ActivityId:520e6139-8e09-4ecb-8a44-d9af570c30d7 MDRESULT:0x80050002 ErrorCode(0): Message:Failed to flush out the buffered messages when closing the channel; lost 2 messages
+Error (2024-06-04T10:01:09Z): Tasks - MAEventTable: Level:2 ActivityId:520e6139-8e09-4ecb-8a44-d9af570c30d7 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(MAUploadSchemaTableWadAccountQuery_MAUploadSchemaTable_SchemasTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-04T10:01:09Z): NetTransport - MAEventTable: Level:2 ActivityId:71f1fe36-df06-4f09-b19d-364688a07636 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(6 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
 Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 211925
+Content-Length: 9800
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADPerformanceCountersTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Tue, 04 Jun 2024 10:00:04 GMT
+Content-ID: 1
+Content-Length: 1242
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:24.9032458Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:CounterName m:type="Edm.String">\ASP.NET Applications(__Total__)\Errors Total/Sec</d:CounterName><d:CounterValue m:type="Edm.Double">0.000000</d:CounterValue><d:EventTickCount m:type="Edm.Int64">638530918449032458</d:EventTickCount><d:PartitionKey>0638530918200000000</d:PartitionKey><d:RowKey>deployment29(170)___RedditService___deployment29(170).Reddit.RedditService_IN_0___0000000004295558154</d:RowKey><d:RowIndex m:type="Edm.String">0000000004295558154</d:RowIndex><d:TIMESTAMP m:type="Edm.DateTime">2024-06-04T09:57:00Z</d:TIMESTAMP></m:properties></content></entry>
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstorea
+Error (2024-06-04T10:01:09Z): NetTransport - MAEventTable: Level:2 ActivityId:8aa1d080-1d3c-452a-9e9e-40bc37485689 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(100 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 212363
 
 --changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
 Content-Type: application/http
@@ -184,35 +239,59 @@ POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTabl
 Host: http://127.0.0.1:10002
 Prefer: return-no-content
 Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:26:54 GMT
+x-ms-date: Tue, 04 Jun 2024 10:00:04 GMT
 Content-ID: 1
-Content-Length: 1810
+Content-Length: 1722
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:26.0950000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">24908</d:Pid><d:Tid m:type="Edm.Int32">17548</d:Tid><d:ActivityId m:type="Edm.String">82298645-4eb0-4ec6-a4c8-e8e07ab12f8d</d:ActivityId><d:Function m:type="Edm.String">SystemCounter::GetCounterNames</d:Function><d:Line m:type="Edm.Int32">1216</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">-1073738824</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">PdhAddEnglishCounter(\Web Service(_Total)\ISAPI Extension Requests/sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:84d59844-6451-40c3-9145-b9d04d8587ed MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(7 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:22.5120000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">19764</d:Pid><d:Tid m:type="Edm.Int32">15052</d:Tid><d:ActivityId m:type="Edm.String">88e414eb-9fbc-4966-8224-63783bc15c7e</d:ActivityId><d:Function m:type="Edm.String">SystemEventsListener::GetMessageString</d:Function><d:Line m:type="Edm.Int32">1855</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">15029</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">Failed to format message</d:Message><d:EventTickCount m:type="Edm.Int64">638530918425120000</d:EventTickCount><d:P
+Error (2024-06-04T10:01:09Z): EtwListener - MAEventTable: Level:2 ActivityId:529aeb25-cf01-457a-a231-998e0458e40b MDRESULT:0x80010008 ErrorCode(0): Message:Event ID overflow in provider; event ID 24207144354119757 is greater than ffffffff
+Error (2024-06-04T10:01:09Z): NetTransport - MAEventTable: Level:2 ActivityId:4de437b9-6d82-4016-96bd-abdf8e0944e5 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changesetresponse_77162fcd-b8da-41ac-a9f8-9357efbbd000
+
+--changesetresponse_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 400 Bad Request
+Content-ID: 1
+DataServiceVersion: 3.0;
+Content-Type: application/json;odata=minimalmetadata;charset=utf-8
+
+{"odata.error":{"code":"InvalidInput","message":{"lang":"en-US","value":"0:An error occurred while processing this request.\nRequestId:d0e3b831-95f9-49d8-913f-a7d43cfea305\nTime:2024-06-04T10:00:49.140Z"}}}
+--changesetresponse_77162fcd-b8da-41ac-a9f8-9357efbbd000--
+--batchresponse_36522ad7-fc75-4b56-8c71-56071383e000--
+.
+Error (2024-06-04T10:01:09Z): NetTransport - MAEventTable: Level:2 ActivityId:4de437b9-6d82-4016-96bd-abdf8e0944e5 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(1 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
 Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 17206
+Content-Length: 3465
 
 --changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
 Content-Type: application/http
 Content-Transfer-Encoding:binary
 
-POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+POST http://127.0.0.1:10002/devstoreaccount1/SchemasTable HTTP/1.1
 Host: http://127.0.0.1:10002
 Prefer: return-no-content
 Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:26:56 GMT
+x-ms-date: Tue, 04 Jun 2024 10:00:49 GMT
 Content-ID: 1
-Content-Length: 2046
+Content-Length: 2991
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:50.4119007Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">22792</d:Pid><d:Tid m:type="Edm.Int32">17468</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endT
-Error (2024-05-17T21:27:28Z): NetTransport - MAEventTable: Level:2 ActivityId:20aa2dfb-e0f4-453e-b6df-7773dc8c8c7a MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(100 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>1601-01-01T00:00:00.0000001Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PhysicalTableName m:type="Edm.String">WADWindowsEventLogsTable</d:PhysicalTableName><d:MD5Hash m:type="Edm.String">4906b5683cf854da3585c69edfc15b09</d:MD5Hash><d:Schema m:type="Edm.String">&lt;MdsConfig&gt;&lt;Schemas&gt;&lt;Schema name=&quot;Schema_4906b5683cf854da3585c69edfc15b09&quot;&gt;&lt;Column name=&quot;TIMESTAMP&quot; type=&quot;mt:utc&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;PreciseTimeStamp&quot; type=&quot;mt:utc&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;DeploymentId&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;Role&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;RoleInstance&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;ProviderGuid&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;ProviderName&quot; type=&quot;mt:wstr&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;EventId&quot; type=&quot;mt:int32&quot;&gt;&lt;/Column&gt;&lt;Column name=&quot;Level&quot; type=&quot;mt:int32&quot;&gt;&lt;/Column&gt;&lt;Column nam
+Info  (2024-06-04T10:01:09Z): MonAgentHost.exe - MonAgentHost was stopped by MonAgentManager.
+Info  (2024-06-04T10:01:09Z): MonAgentManager.exe - MonAgentManager received a signal from the total shutdown event 'WADDM-TotalShutDown-ec10c8670a68411581719ca24577184f'.
+Info  (2024-06-04T10:01:09Z): MonAgentManager.exe - Exiting the monitoring agent host 19964 after handling control 1 .
+Info  (2024-06-04T10:01:19Z): MonAgentManager.exe - Dumping MA error and warning events from C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\csx\Debug\roles\RedditService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:72facdcf-b6e9-45dd-b753-a34c954fcb24 MDRESULT:0x80050006 ErrorCode(0): Message:GetRequestStatusCode failed 0x0, StatusCode = 500. Internal Server Error. RequestId=
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:72facdcf-b6e9-45dd-b753-a34c954fcb24 MDRESULT:0x80050006 ErrorCode(0): Message:The response text of last failure is: 
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:72facdcf-b6e9-45dd-b753-a34c954fcb24 MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADWindowsEventLogsTable as Xstore rejected the request
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:72facdcf-b6e9-45dd-b753-a34c954fcb24 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(14 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
 Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
-Content-Length: 326684
+Content-Length: 42370
 
 --changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
 Content-Type: application/http
@@ -222,14 +301,63 @@ POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
 Host: http://127.0.0.1:10002
 Prefer: return-no-content
 Content-Type: application/atom+xml; type=entry
-x-ms-date: Fri, 17 May 2024 21:27:00 GMT
+x-ms-date: Tue, 04 Jun 2024 10:01:14 GMT
 Content-ID: 1
-Content-Length: 2392
+Content-Length: 2343
 
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-05-17T21:24:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-05-17T21:24:15.9598227Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(75)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(75).Reddit.RedditService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Failed to save IIS Directory state</d:Description><d:RawXml m:type="Edm.String">&lt;Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'&gt;&lt;System&gt;&lt;Provider Name='AzureDiagnostics'/&gt;&lt;EventID Qualifiers='0'&gt;0&lt;/EventID&gt
-Error (2024-05-17T21:27:28Z): EtwListener - MAEventTable: Level:2 ActivityId:4fbc9f61-317d-43a7-8c31-d17a1c008022 MDRESULT:0x80010008 ErrorCode(0): Message:Event ID overflow in provider; event ID 24207144354119757 is greater than ffffffff
-Info  (2024-05-17T21:27:28Z): MonAgentHost.exe - MonAgentHost was stopped by MonAgentManager.
-Info  (2024-05-17T21:27:28Z): MonAgentManager.exe - MonAgentManager received a signal from the total shutdown event 'WADDM-TotalShutDown-87d8985d64be49b0a9b1070fbc166e9e'.
-Info  (2024-05-17T21:27:28Z): MonAgentManager.exe - Exiting the monitoring agent host 19168 after handling control 1 .
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:56:59.4995035Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">Windows Azure Runtime 2.7.0.0</d:ProviderName><d:EventId m:type="Edm.Int32">20001</d:EventId><d:Level m:type="Edm.Int32">4</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">1</d:Task><d:Channel m:type="Edm.String">Windows Azure</d:Channel><d:Description m:type="Edm.String">%1</d:Description><d:RawXml m:type="Edm.String">&lt;Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'&gt;&lt;System&gt;&lt;Provider Name='Windows Azure Runtime 2.7.0.0'/&gt;&lt;EventID Qualifiers='0'&gt;20001&lt;/EventI
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:72facdcf-b6e9-45dd-b753-a34c954fcb24 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADWindowsEventLogsTable; partition key 0638530917600000000
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:72facdcf-b6e9-45dd-b753-a34c954fcb24 MDRESULT:0x80050002 ErrorCode(0): Message:Fail to finalize the XTableConnection object
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:72facdcf-b6e9-45dd-b753-a34c954fcb24 MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
+Error (2024-06-04T10:01:19Z): Tasks - MAEventTable: Level:2 ActivityId:72facdcf-b6e9-45dd-b753-a34c954fcb24 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(WindowsEventLogsTableQuery_WindowsEventLogsTable_WADWindowsEventLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:ac16f038-ed32-4548-86cb-a586bb7f2d36 MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable as Xstore rejected the request
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:ac16f038-ed32-4548-86cb-a586bb7f2d36 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(7 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 17237
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Tue, 04 Jun 2024 10:01:14 GMT
+Content-ID: 1
+Content-Length: 2050
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:41.4106438Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">12144</d:Pid><d:Tid m:type="Edm.Int32">15728</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime en
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:ac16f038-ed32-4548-86cb-a586bb7f2d36 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADDiagnosticInfrastructureLogsTable; partition key 0638530918200000000
+Error (2024-06-04T10:01:19Z): Tasks - MAEventTable: Level:2 ActivityId:ac16f038-ed32-4548-86cb-a586bb7f2d36 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(DiagnosticInfrastructureLogsTableQuery_DiagnosticInfrastructureLogsTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:070a822b-0c57-4dca-be9e-ad1ab725c723 MDRESULT:0x80050006 ErrorCode(0): Message:Failed to send bytes to XTable WADPerformanceCountersTable as Xstore rejected the request
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:070a822b-0c57-4dca-be9e-ad1ab725c723 MDRESULT:0x80050006 ErrorCode(0): Message:After 0 retries, Failed to send out data(6 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 9800
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADPerformanceCountersTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Tue, 04 Jun 2024 10:01:17 GMT
+Content-ID: 1
+Content-Length: 1242
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-04T09:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-04T09:57:24.9032458Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(170)</d:DeploymentId><d:Role m:type="Edm.String">RedditService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(170).Reddit.RedditService_IN_0</d:RoleInstance><d:CounterName m:type="Edm.String">\ASP.NET Applications(__Total__)\Errors Total/Sec</d:CounterName><d:CounterValue m:type="Edm.Double">0.000000</d:CounterValue><d:EventTickCount m:type="Edm.Int64">638530918449032458</d:EventTickCount><d:PartitionKey>0638530918200000000</d:PartitionKey><d:RowKey>deployment29(170)___RedditService___deployment29(170).Reddit.RedditService_IN_0___0000000004295558154</d:RowKey><d:RowIndex m:type="Edm.String">0000000004295558154</d:RowIndex><d:TIMESTAMP m:type="Edm.DateTime">2024-06-04T09:57:00Z</d:TIMESTAMP></m:properties></content></entry>
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstorea
+Error (2024-06-04T10:01:19Z): NetTransport - MAEventTable: Level:2 ActivityId:070a822b-0c57-4dca-be9e-ad1ab725c723 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADPerformanceCountersTable; partition key 0638530918200000000
+Error (2024-06-04T10:01:19Z): Tasks - MAEventTable: Level:2 ActivityId:070a822b-0c57-4dca-be9e-ad1ab725c723 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(PerformanceCountersTableQuery_PerformanceCountersTable_WADPerformanceCountersTable_PT1M_XTableWadAccount) failed; bytes sent 0

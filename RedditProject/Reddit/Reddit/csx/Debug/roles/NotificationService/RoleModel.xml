@@ -16,7 +16,7 @@
   </Runtime>
   <Properties>
     <Property name="TargetFrameworkVersion" value="v4.5.1" />
-    <Property name="OutputDir" value="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\obj\Debug\NotificationService\" />
+    <Property name="OutputDir" value="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\obj\Debug\NotificationService\" />
     <Property name="RoleTargetFramework" value="v4.5.1" />
     <Property name="SitePhysicalPath" value="" />
     <Property name="EntryPoint" value="NotificationService.dll" />

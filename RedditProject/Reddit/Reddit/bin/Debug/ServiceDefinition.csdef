@@ -27,10 +27,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\rcf\Debug\RedditServiceContent\" />
+        <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\RedditServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\ecf\RedditServiceContent\" />
+        <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\ecf\RedditServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -47,10 +47,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\rcf\Debug\NotificationServiceContent\" />
+        <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\NotificationServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\ecf\NotificationServiceContent\" />
+        <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\ecf\NotificationServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -60,13 +60,17 @@
   <WorkerRole name="HealthMonitoringService" vmsize="Standard_D1_v2">
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="DataConnectionString" />
     </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="hms-admin" protocol="tcp" port="10178" />
+    </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\rcf\Debug\HealthMonitoringServiceContent\" />
+        <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\HealthMonitoringServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\ecf\HealthMonitoringServiceContent\" />
+        <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\ecf\HealthMonitoringServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -90,10 +94,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\rcf\Debug\HealthStatusServiceContent\" />
+        <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\rcf\Debug\HealthStatusServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Jovan\Desktop\RedditProject\Reddit\Reddit\ecf\HealthStatusServiceContent\" />
+        <SourceDirectory path="C:\Users\Jovan\Desktop\Cloud_Projekat\Cloud-in-smart-grids\RedditProject\Reddit\Reddit\ecf\HealthStatusServiceContent\" />
       </Content>
     </Contents>
     <Imports>

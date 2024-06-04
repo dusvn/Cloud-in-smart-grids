@@ -42,8 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\FullPostDTO.cs" />
+    <Compile Include="DTO\FullUserDTO.cs" />
+    <Compile Include="DTO\MyTopicCommentsDTO.cs" />
+    <Compile Include="DTO\PostDTO.cs" />
+    <Compile Include="DTO\SubscribeDTO.cs" />
+    <Compile Include="DTO\VotesDTO.cs" />
+    <Compile Include="IHealthMonitoring.cs" />
     <Compile Include="INotification.cs" />
     <Compile Include="IRedditService.cs" />
+    <Compile Include="Models\UserLogin.cs" />
+    <Compile Include="Models\UserRegister.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

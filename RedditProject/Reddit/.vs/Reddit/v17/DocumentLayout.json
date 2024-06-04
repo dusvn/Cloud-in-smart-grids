@@ -1,88 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|c:\\users\\jovan\\desktop\\redditproject\\reddit\\redditservice\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4787DE86-0007-4D8F-A8EA-3295023CDBD8}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|c:\\users\\jovan\\desktop\\redditproject\\reddit\\reddit_data\\queuehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\queuehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|c:\\users\\jovan\\desktop\\redditproject\\reddit\\reddit_data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|c:\\users\\jovan\\desktop\\redditproject\\reddit\\reddit_data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96AFADCC-375E-4712-8CDC-822C2F688AFE}|Reddit_Data\\Reddit_Data.csproj|solutionrelative:reddit_data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\Jovan\\Desktop\\Cloud_Projekat\\Cloud-in-smart-grids\\RedditProject\\Reddit\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\Reddit_Data\\User.cs",
-              "RelativeDocumentMoniker": "Reddit_Data\\User.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\Reddit_Data\\User.cs",
-              "RelativeToolTip": "Reddit_Data\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T20:56:12.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\Reddit_Data\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Reddit_Data\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\Reddit_Data\\UserRepository.cs",
-              "RelativeToolTip": "Reddit_Data\\UserRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCIAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T20:54:51.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QueueHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\Reddit_Data\\QueueHelper.cs",
-              "RelativeDocumentMoniker": "Reddit_Data\\QueueHelper.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\Reddit_Data\\QueueHelper.cs",
-              "RelativeToolTip": "Reddit_Data\\QueueHelper.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T20:53:45.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LogInController.cs",
-              "DocumentMoniker": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\RedditService\\Controllers\\LogInController.cs",
-              "RelativeDocumentMoniker": "RedditService\\Controllers\\LogInController.cs",
-              "ToolTip": "C:\\Users\\Jovan\\Desktop\\RedditProject\\Reddit\\RedditService\\Controllers\\LogInController.cs",
-              "RelativeToolTip": "RedditService\\Controllers\\LogInController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T17:03:43.452Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
